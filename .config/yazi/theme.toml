@@ -1,0 +1,66 @@
+# Tokyo Night inspired theme for Yazi
+# Updated color for selected items
+[manager]
+cwd = { fg = "#BD93F9" }  # Purple for current working directory text
+
+# Hovered
+hovered         = { fg = "#F8F8F2", bg = "#282A36", reversed = true } # Light foreground, dark background with reversed effect
+preview_hovered = { fg = "#8BE9FD", underline = true }                # Cyan and underline in preview pane
+
+# Find
+find_keyword  = { fg = "#FF79C6", bg = "#282A36", bold = true, italic = true, underline = true } # Bright pink with effects for keywords
+find_position = { fg = "#50FA7B", bg = "#282A36", bold = true, italic = true }                   # Green with italic for find position
+
+# Marker
+marker_copied   = { fg = "#50FA7B", bg = "#282A36" }  # Bright green for copied items
+marker_cut      = { fg = "#FF5555", bg = "#282A36" }  # Red for cut items
+marker_marked   = { fg = "#8BE9FD", bg = "#282A36" }  # Cyan for marked items
+marker_selected = { fg = "#FFB86C", bg = "#282A36" }  # Orange for selected items
+
+# Tab
+tab_active   = { fg = "#F8F8F2", bg = "#44475A", reversed = true } # Reverse colors for active tab, with gray background
+tab_inactive = { fg = "#6272A4", bg = "#282A36" }                  # Muted blue-gray for inactive tabs
+tab_width    = 1                                                   # Tab max width
+
+# Count
+count_copied   = { fg = "#282A36", bg = "#50FA7B" } # Green with dark text for copied count
+count_cut      = { fg = "#282A36", bg = "#FF5555" } # Red with dark text for cut count
+count_selected = { fg = "#282A36", bg = "#FFB86C" } # Orange with dark text for selected count
+
+# Border
+border_symbol = "│"                           # Vertical line as border symbol
+border_style  = { fg = "#44475A", bg = "#282A36" } # Dark gray for subtle border style
+# [tab]
+# active = { fg = "#A9B1D6", bg = "#1A1B26" }   # Light text on dark blue background
+# inactive = { fg = "#565F89", bg = "#1E2030" } # Muted gray for inactive tabs
+# max_width = 1
+#
+[status]
+primary = { normal = "#7AA2F7", select = "#7DCFFF", unset = "#FF9E64" }
+secondary = { normal = "#1A1B26", select = "#2A2B3C", unset = "#2A2B3C" }
+
+[progress]
+gauge = { fg = "#BB9AF7", bg = "#1A1B26" } # Purple for progress
+
+[selection]
+hovered = { fg = "#1A1B26", bg = "#7AA2F7" } # Light blue hover effect
+selected = { fg = "#C0CAF5", bg = "#3B4261" } # Bright blue for selected text, dark blue background
+
+[preview]
+hovered = { underline = true }
+
+[filetype]
+rules = [
+  { mime = "image/*", fg = "#7DCFFF" },     # Cyan for images
+  { mime = "video/*", fg = "#FF9E64" },     # Orange for videos
+  { mime = "text/*", fg = "#A9B1D6" },      # Light text for text files
+  { mime = "application/*", fg = "#9ECE6A" }# Green for applications
+]
+
+[icons]
+"Desktop/" = ""
+"Documents/" = ""
+"Downloads/" = ""
+"Pictures/" = ""
+"Videos/" = ""
+

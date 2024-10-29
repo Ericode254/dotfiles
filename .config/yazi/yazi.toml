@@ -64,7 +64,7 @@ ueberzug_offset = [ 0, 0, 0, 0 ]
 
 edit = [
 
-	{ run = '${EDITOR:-vi} "$@"', desc = "$EDITOR", block = true, for = "unix" },
+	{ run = '${EDITOR} "$@"', desc = "$EDITOR", block = true, for = "unix" },
 
 	{ run = 'code %*',    orphan = true, desc = "code",           for = "windows" },
 

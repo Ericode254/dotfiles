@@ -57,3 +57,6 @@ export FZF_CTRL_R_OPTS="
 export FZF_ALT_C_OPTS="
   --walker-skip .git,node_modules,target
   --preview 'eza --tree --icons --color=always {}'"
+
+# initializing zoxide
+eval "$(zoxide init --cmd cd zsh)"

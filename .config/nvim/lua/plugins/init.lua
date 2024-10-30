@@ -15,7 +15,7 @@ return {
   {
     "epwalsh/obsidian.nvim",
     version = "*", -- recommended, use latest release instead of latest commit
-    lazy = true,
+    lazy = false,
     ft = "markdown",
     -- Replace the above line with this if you only want to load obsidian.nvim for markdown files in your vault:
     -- event = {
@@ -43,15 +43,29 @@ return {
         },
       },
 
+      mappings = {
+        ["gf"] = {
+          action = function()
+            return require("obsidian").util.gf_passthrough()
+          end,
+          opts = { noremap = false, expr = true, buffer = true },
+        },
+      }
+
       -- see below for full list of options 👇
     },
   },
   {
     'gelguy/wilder.nvim',
-    config = function()
-      require "configs.wilder"
+     lazy = false,
+     config = function()
+      require("configs.wilder")
     end,
   },
+{
+    'romgrk/fzy-lua-native',  -- Ensure lua_fzy is included
+    lazy = false,
+},
   {
     "iamcco/markdown-preview.nvim",
     cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },

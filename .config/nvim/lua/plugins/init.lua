@@ -12,60 +12,37 @@ return {
       require "configs.lspconfig"
     end,
   },
+
+
   {
     "epwalsh/obsidian.nvim",
-    version = "*", -- recommended, use latest release instead of latest commit
+    version = "*",
     lazy = false,
     ft = "markdown",
-    -- Replace the above line with this if you only want to load obsidian.nvim for markdown files in your vault:
-    -- event = {
-    --   -- If you want to use the home shortcut '~' here you need to call 'vim.fn.expand'.
-    --   -- E.g. "BufReadPre " .. vim.fn.expand "~" .. "/my-vault/*.md"
-    --   -- refer to `:h file-pattern` for more examples
-    --   "BufReadPre path/to/my-vault/*.md",
-    --   "BufNewFile path/to/my-vault/*.md",
-    -- },
-    dependencies = {
-      -- Required.
-      "nvim-lua/plenary.nvim",
-
-      -- see below for full list of optional dependencies 👇
-    },
+    dependencies = { "nvim-lua/plenary.nvim" },
     opts = {
       workspaces = {
-        {
-          name = "personal",
-          path = "~/vaults/personal",
-        },
-        {
-          name = "work",
-          path = "~/vaults/work",
-        },
+        { name = "personal", path = "~/vaults/personal" },
+        { name = "work",     path = "~/vaults/work" },
       },
-
-      mappings = {
-        ["gf"] = {
-          action = function()
-            return require("obsidian").util.gf_passthrough()
-          end,
-          opts = { noremap = false, expr = true, buffer = true },
-        },
-      }
-
-      -- see below for full list of options 👇
+      notes_subdir = "personal/Notes",          -- Specify the default subdirectory for new notes
+      templates = {
+        folder = "~/vaults/Templates", -- Path to your template
+        insert_on_new_file = true,     -- Automatically insert template content in new files
+      },
     },
   },
   {
     'gelguy/wilder.nvim',
-     lazy = false,
-     config = function()
+    lazy = false,
+    config = function()
       require("configs.wilder")
     end,
   },
-{
-    'romgrk/fzy-lua-native',  -- Ensure lua_fzy is included
+  {
+    'romgrk/fzy-lua-native', -- Ensure lua_fzy is included
     lazy = false,
-},
+  },
   {
     "iamcco/markdown-preview.nvim",
     cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
@@ -332,7 +309,7 @@ return {
         "html", "css", "c", "cpp",
         "csv", "gitattributes", "java",
         "javascript", "json", "lua", "make",
-        "markdown", "python", "rust", "sql",
+        "markdown", "markdown_inline", "python", "rust", "sql",
         "tsx", "typescript", "vim", "yaml"
       },
     },

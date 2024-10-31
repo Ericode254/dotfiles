@@ -17,20 +17,23 @@ for _, lsp in ipairs(servers) do
 end
 
 -- language server for python
-lspconfig.pyright.setup{}
+lspconfig.pyright.setup {}
 
 -- language server for tailwind
-lspconfig.tailwindcss.setup{}
+lspconfig.tailwindcss.setup {}
 
 -- language server for eslint
-lspconfig.eslint.setup{}
+lspconfig.eslint.setup {}
 
 -- language server for c and c++
-lspconfig.clangd.setup{
-  cmd = { "clangd", "--background-index"},
+lspconfig.clangd.setup {
+  cmd = { "clangd", "--background-index" },
   filetypes = { "c", "cpp" },
   root_dir = require("lspconfig/util").root_pattern("compile_commands.json", "compile_flags.txt", ".git", "CMAKELists.txt"),
 }
+
+-- setup bash language server
+lspconfig.bashls.setup {}
 
 -- configuring single server, example: typescript
 lspconfig.ts_ls.setup {

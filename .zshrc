@@ -63,3 +63,6 @@ export FZF_ALT_C_OPTS="
 
 # initializing zoxide
 eval "$(zoxide init --cmd cd zsh)"
+
+# add my .local/bin to path
+export PATH="$HOME/.local/bin:$PATH"

@@ -22,10 +22,10 @@ source $ZSH/oh-my-zsh.sh
 pokemon-colorscripts --no-title -s -r
 
 # fastfetch. Will be disabled if above colorscript was chosen to install
-#fastfetch -c $HOME/.config/fastfetch/config-compact.jsonc
+# fastfetch -c $HOME/.config/fastfetch/config.json
 
 # Set-up icons for files/folders in terminal
-alias ls='eza -a --icons'
+alias ls='eza --icons --color=always'
 alias ll='eza -al --icons'
 alias lt='eza -a --tree --level=1 --icons'
 
@@ -66,3 +66,13 @@ eval "$(zoxide init --cmd cd zsh)"
 
 # add my .local/bin to path
 export PATH="$HOME/.local/bin:$PATH"
+
+# my bash scripts
+alias sortNotes="sortNotesByTags.sh"
+alias moveNotes="moveNotes.sh"
+
+# reset fastfetch
+alias fastfetch="fastfetch -c $HOME/.config/fastfetch/config.json"
+
+# download videos
+alias downloader="VideoDownloader.sh"

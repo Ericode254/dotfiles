@@ -1,78 +1,165 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+#  ╔═╗╔═╗╦ ╦╦═╗╔═╗  ╔═╗╔═╗╔╗╔╔═╗╦╔═╗	- z0mbi3
+#  ╔═╝╚═╗╠═╣╠╦╝║    ║  ║ ║║║║╠╣ ║║ ╦	- https://github.com/gh0stzk/dotfiles
+#  ╚═╝╚═╝╩ ╩╩╚═╚═╝  ╚═╝╚═╝╝╚╝╚  ╩╚═╝	- My zsh conf
 
-export ZSH="$HOME/.oh-my-zsh"
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
 
-ZSH_THEME="norm"
+#  ┬  ┬┌─┐┬─┐┌─┐
+#  └┐┌┘├─┤├┬┘└─┐
+#   └┘ ┴ ┴┴└─└─┘
+export VISUAL="${EDITOR}"
+export EDITOR='nvim'
+export BROWSER='firefox'
+export HISTORY_IGNORE="(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
+export SUDO_PROMPT="Deploying root access for %u. Password pls: "
+export BAT_THEME="base16"
 
-plugins=(
-    git
-    archlinux
-    zsh-autosuggestions
-    zsh-syntax-highlighting
-)
+if [ -d "$HOME/.local/bin" ] ;
+  then PATH="$HOME/.local/bin:$PATH"
+fi
 
-source $ZSH/oh-my-zsh.sh
+#  ┬  ┌─┐┌─┐┌┬┐  ┌─┐┌┐┌┌─┐┬┌┐┌┌─┐
+#  │  │ │├─┤ ││  ├┤ ││││ ┬││││├┤
+#  ┴─┘└─┘┴ ┴─┴┘  └─┘┘└┘└─┘┴┘└┘└─┘
+autoload -Uz compinit
 
-# Check archlinux plugin commands here
-# https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/archlinux
+for dump in ~/.config/zsh/zcompdump(N.mh+24); do
+  compinit -d ~/.config/zsh/zcompdump
+done
 
-# Display Pokemon-colorscripts
-# Project page: https://gitlab.com/phoneybadger/pokemon-colorscripts#on-other-distros-and-macos
-pokemon-colorscripts --no-title -s -r
+compinit -C -d ~/.config/zsh/zcompdump
 
-# fastfetch. Will be disabled if above colorscript was chosen to install
-# fastfetch -c $HOME/.config/fastfetch/config.json
+autoload -Uz add-zsh-hook
+autoload -Uz vcs_info
+precmd () { vcs_info }
+_comp_options+=(globdots)
 
-# Set-up icons for files/folders in terminal
-alias ls='eza --icons --color=always'
-alias ll='eza -al --icons'
-alias lt='eza -a --tree --level=1 --icons'
+zstyle ':completion:*' verbose true
+zstyle ':completion:*:*:*:*:*' menu select
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS} 'ma=48;5;197;1'
+zstyle ':completion:*' matcher-list \
+		'm:{a-zA-Z}={A-Za-z}' \
+		'+r:|[._-]=* r:|=*' \
+		'+l:|=*'
+zstyle ':completion:*:warnings' format "%B%F{red}No matches for:%f %F{magenta}%d%b"
+zstyle ':completion:*:descriptions' format '%F{yellow}[-- %d --]%f'
+zstyle ':vcs_info:*' formats ' %B%s-[%F{magenta}%f %F{yellow}%b%f]-'
 
-alias v='nvim'
-alias zconf='nvim ~/.zshrc'
+#  ┬ ┬┌─┐┬┌┬┐┬┌┐┌┌─┐  ┌┬┐┌─┐┌┬┐┌─┐
+#  │││├─┤│ │ │││││ ┬   │││ │ │ └─┐
+#  └┴┘┴ ┴┴ ┴ ┴┘└┘└─┘  ─┴┘└─┘ ┴ └─┘
+expand-or-complete-with-dots() {
+  echo -n "\e[31m…\e[0m"
+  zle expand-or-complete
+  zle redisplay
+}
+zle -N expand-or-complete-with-dots
+bindkey "^I" expand-or-complete-with-dots
 
-# Set-up FZF key bindings (CTRL R for fuzzy history finder)
-source <(fzf --zsh)
-
-HISTFILE=~/.zsh_history
-HISTSIZE=10000
-SAVEHIST=10000
+#  ┬ ┬┬┌─┐┌┬┐┌─┐┬─┐┬ ┬
+#  ├─┤│└─┐ │ │ │├┬┘└┬┘
+#  ┴ ┴┴└─┘ ┴ └─┘┴└─ ┴
+HISTFILE=~/.config/zsh/zhistory
+HISTSIZE=5000
+SAVEHIST=5000
+HISTDUP=erase
 setopt appendhistory
-. "/home/code/.deno/env"
+setopt sharehistory
+setopt hist_ignore_space
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
+setopt hist_ignore_dups
+setopt hist_find_no_dups
 
-# changing the default search engine
-export FZF_DEFAULT_COMMAND='fd --type f --hidden --exclude .git'
+#  ┌─┐┌─┐┬ ┬  ┌─┐┌─┐┌─┐┬    ┌─┐┌─┐┌┬┐┬┌─┐┌┐┌┌─┐
+#  ┌─┘└─┐├─┤  │  │ ││ ││    │ │├─┘ │ ││ ││││└─┐
+#  └─┘└─┘┴ ┴  └─┘└─┘└─┘┴─┘  └─┘┴   ┴ ┴└─┘┘└┘└─┘
+setopt AUTOCD              # change directory just by typing its name
+setopt PROMPT_SUBST        # enable command substitution in prompt
+setopt MENU_COMPLETE       # Automatically highlight first element of completion menu
+setopt LIST_PACKED		   # The completion menu takes less space.
+setopt AUTO_LIST           # Automatically list choices on ambiguous completion.
+setopt COMPLETE_IN_WORD    # Complete from both ends of a word.
 
-# Open in tmux popup if on tmux, otherwise use --height mode
-export FZF_DEFAULT_OPTS='--height 40% --tmux center,40% --layout reverse --border top'
-# Preview file content using bat (https://github.com/sharkdp/bat)
-export FZF_CTRL_T_OPTS="
-  --walker-skip .git,node_modules,target
-  --preview 'bat -n --color=always {}'
-  --bind 'ctrl-/:change-preview-window(down|hidden|)'"
-# CTRL-Y to copy the command into clipboard using pbcopy
-export FZF_CTRL_R_OPTS="
-  --bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort'
-  --color header:italic
-  --header 'Press CTRL-Y to copy command into clipboard'"
-# Print tree structure in the preview window
-export FZF_ALT_C_OPTS="
-  --walker-skip .git,node_modules,target
-  --preview 'eza --tree --icons --color=always {}'"
+#  ┌┬┐┬ ┬┌─┐  ┌─┐┬─┐┌─┐┌┬┐┌─┐┌┬┐
+#   │ ├─┤├┤   ├─┘├┬┘│ ││││├─┘ │
+#   ┴ ┴ ┴└─┘  ┴  ┴└─└─┘┴ ┴┴   ┴
+function dir_icon {
+  if [[ "$PWD" == "$HOME" ]]; then
+    echo "%B%F{cyan}%f%b"
+  else
+    echo "%B%F{cyan}%f%b"
+  fi
+}
 
-# initializing zoxide
-eval "$(zoxide init --cmd cd zsh)"
+PS1='%B%F{blue}%f%b  %B%F{magenta}%n%f%b $(dir_icon)  %B%F{red}%~%f%b${vcs_info_msg_0_} %(?.%B%F{green}.%F{red})%f%b '
 
-# add my .local/bin to path
-export PATH="$HOME/.local/bin:$PATH"
+# command not found
+command_not_found_handler() {
+	printf "%s%s? I don't know what is it\n" "$acc" "$0" >&2
+    return 127
+}
 
-# my bash scripts
+#  ┌─┐┬  ┬ ┬┌─┐┬┌┐┌┌─┐
+#  ├─┘│  │ ││ ┬││││└─┐
+#  ┴  ┴─┘└─┘└─┘┴┘└┘└─┘
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+bindkey '^[[3~' delete-char
+
+#  ┌─┐┬ ┬┌─┐┌┐┌┌─┐┌─┐  ┌┬┐┌─┐┬─┐┌┬┐┬┌┐┌┌─┐┬  ┌─┐  ┌┬┐┬┌┬┐┬  ┌─┐
+#  │  ├─┤├─┤││││ ┬├┤    │ ├┤ ├┬┘│││││││├─┤│  └─┐   │ │ │ │  ├┤
+#  └─┘┴ ┴┴ ┴┘└┘└─┘└─┘   ┴ └─┘┴└─┴ ┴┴┘└┘┴ ┴┴─┘└─┘   ┴ ┴ ┴ ┴─┘└─┘
+function xterm_title_precmd () {
+	print -Pn -- '\e]2;%n@%m %~\a'
+	[[ "$TERM" == 'screen'* ]] && print -Pn -- '\e_\005{g}%n\005{-}@\005{m}%m\005{-} \005{B}%~\005{-}\e\\'
+}
+
+function xterm_title_preexec () {
+	print -Pn -- '\e]2;%n@%m %~ %# ' && print -n -- "${(q)1}\a"
+	[[ "$TERM" == 'screen'* ]] && { print -Pn -- '\e_\005{g}%n\005{-}@\005{m}%m\005{-} \005{B}%~\005{-} %# ' && print -n -- "${(q)1}\e\\"; }
+}
+
+if [[ "$TERM" == (kitty*|alacritty*|tmux*|screen*|xterm*) ]]; then
+	add-zsh-hook -Uz precmd xterm_title_precmd
+	add-zsh-hook -Uz preexec xterm_title_preexec
+fi
+
+#  ┌─┐┬  ┬┌─┐┌─┐
+#  ├─┤│  │├─┤└─┐
+#  ┴ ┴┴─┘┴┴ ┴└─┘
+#  my arch linux aliases
+alias mirrors="sudo reflector --verbose --latest 5 --country 'United States' --age 6 --sort rate --save /etc/pacman.d/mirrorlist"
+alias update="paru -Syu --nocombinedupgrade"
+alias grub-update="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+
+# my zsh aliases
+alias music="ncmpcpp"
+alias cat="bat --theme=base16"
+alias ls='eza --icons=always --color=always'
+alias ll='eza --icons=always --color=always -la'
+alias .2='cd ../..'
+alias .3='cd ../../..'
+alias .4='cd ../../../..'
+alias zconf="nvim ~/.zshrc"
+alias v="nvim"
+alias fetch='colorscript -e zfetch'
+
+# my bash scripts aliases
 alias sortNotes="sortNotesByTags.sh"
-alias moveNotes="moveNotes.sh"
-
-# reset fastfetch
-alias fastfetch="fastfetch -c $HOME/.config/fastfetch/config.json"
-
-# download videos
+alias moveNotes="moveObsidianNotes.sh"
 alias downloader="VideoDownloader.sh"
+
+# my default exports
+# export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export MANPAGER="grc -es --colour=auto less -R"
+
+#  ┌─┐┬ ┬┌┬┐┌─┐  ┌─┐┌┬┐┌─┐┬─┐┌┬┐
+#  ├─┤│ │ │ │ │  └─┐ │ ├─┤├┬┘ │
+#  ┴ ┴└─┘ ┴ └─┘  └─┘ ┴ ┴ ┴┴└─ ┴
+$HOME/.local/bin/colorscript -r

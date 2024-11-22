@@ -8,12 +8,12 @@
 #  ┬  ┬┌─┐┬─┐┌─┐
 #  └┐┌┘├─┤├┬┘└─┐
 #   └┘ ┴ ┴┴└─└─┘
-export VISUAL="${EDITOR}"
+export VISUAL="nvim"
 export EDITOR='nvim'
 export BROWSER='firefox'
 export HISTORY_IGNORE="(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
 export SUDO_PROMPT="Deploying root access for %u. Password pls: "
-export BAT_THEME="base16"
+export BAT_THEME="Solarized (dark)"
 
 if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
@@ -149,6 +149,10 @@ alias .4='cd ../../../..'
 alias zconf="nvim ~/.zshrc"
 alias v="nvim"
 alias fetch='colorscript -e zfetch'
+alias tn="tmux new -s $(pwd | sed 's:.*/::')"
+alias z="zathura"
+alias man="batman"
+alias brain="brain.sh"
 
 # my bash scripts aliases
 alias sortNotes="sortNotesByTags.sh"
@@ -157,9 +161,12 @@ alias downloader="VideoDownloader.sh"
 
 # my default exports
 # export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-export MANPAGER="grc -es --colour=auto less -R"
-
+# man 2 select
+# export GEMINI_API_KEY="AIzaSyD_fyXf_QflUu3nBCZIjqSXEV3IeH7EJA8"
 #  ┌─┐┬ ┬┌┬┐┌─┐  ┌─┐┌┬┐┌─┐┬─┐┌┬┐
 #  ├─┤│ │ │ │ │  └─┐ │ ├─┤├┬┘ │
 #  ┴ ┴└─┘ ┴ └─┘  └─┘ ┴ ┴ ┴┴└─ ┴
 $HOME/.local/bin/colorscript -r
+
+# setup zoxide
+eval "$(zoxide init --cmd cd zsh)"

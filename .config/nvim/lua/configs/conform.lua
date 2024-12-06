@@ -5,11 +5,12 @@ local options = {
     html = { "prettier" },
     javascript = { "prettier" },
     typescript = { "prettier" },
+    python = { "prettier" },
   },
 
   format_on_save = {
     -- These options will be passed to conform.format()
-    timeout_ms = 100,
+    timeout_ms = 500,
     lsp_fallback = true,
   },
 }

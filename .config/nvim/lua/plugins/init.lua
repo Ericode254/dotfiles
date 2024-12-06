@@ -1,8 +1,26 @@
 return {
   {
     "stevearc/conform.nvim",
-    event = 'BufWritePre', -- uncomment for format on save
+    event = "BufWritePre", -- uncomment for format on save
     opts = require "configs.conform",
+  },
+
+  -- take snap shots easily
+  {
+    "mistricky/codesnap.nvim",
+    enabled = true,
+    lazy = false,
+    build = "make build_generator",
+    keys = {
+      { "<leader>cc", "<cmd>CodeSnap<cr>", mode = "x", desc = "Save selected code snapshot into clipboard" },
+      { "<leader>cs", "<cmd>CodeSnapSave<cr>", mode = "x", desc = "Save selected code snapshot in ~/Pictures" },
+    },
+    opts = {
+      save_path = "~/Pictures",
+      has_breadcrumbs = true,
+      bg_theme = "bamboo",
+      watermark = "",
+    },
   },
 
   -- These are some examples, uncomment them if you want to see them work!
@@ -16,15 +34,16 @@ return {
     "yetone/avante.nvim",
     event = "VeryLazy",
     lazy = false,
+    enabled = false,
     version = false, -- set this if you want to always pull the latest change
     opts = {
       -- add any opts here
       provider = "gemini",
       gemini = {
         -- add any gemini opts here
-        api_key_name = os.getenv("GEMINI_API_KEY"),
+        api_key_name = os.getenv "GEMINI_API_KEY",
         -- endpoint = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent",
-      }
+      },
     },
     -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
     build = "make",
@@ -36,7 +55,7 @@ return {
       "MunifTanjim/nui.nvim",
       --- The below dependencies are optional,
       "nvim-tree/nvim-web-devicons", -- or echasnovski/mini.icons
-      "zbirenbaum/copilot.lua",    -- for providers='copilot'
+      "zbirenbaum/copilot.lua", -- for providers='copilot'
       {
         -- support for image pasting
         "HakonHarnes/img-clip.nvim",
@@ -50,13 +69,14 @@ return {
               insert_mode = true,
             },
             -- required for Windows users
-            use_absolute_path = true,
+            use_absolute_path = false,
           },
         },
       },
+
       {
         -- Make sure to set this up properly if you have lazy=true
-        'MeanderingProgrammer/render-markdown.nvim',
+        "MeanderingProgrammer/render-markdown.nvim",
         opts = {
           file_types = { "markdown", "Avante" },
         },
@@ -64,12 +84,49 @@ return {
       },
     },
   },
+
   {
-    'gen740/SmoothCursor.nvim',
+    "kylechui/nvim-surround",
+    version = "*", -- Use for stability; omit to use `main` branch for the latest features
+    event = "VeryLazy",
     config = function()
-      require('configs.smoothcursor')
-    end
+      require("nvim-surround").setup {
+        -- Configuration here, or leave empty to use defaults
+      }
+    end,
   },
+
+  {
+    "gen740/SmoothCursor.nvim",
+    enabled = true,
+    lazy = false,
+    config = function()
+      require "configs.smoothcursor"
+    end,
+  },
+
+  -- twilight installation
+  {
+    "folke/twilight.nvim",
+    enabled = true,
+    lazy = false,
+    opts = {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    },
+  },
+
+  -- zen mode plugin
+  {
+    "folke/zen-mode.nvim",
+    enabled = true,
+    lazy = false,
+    config = function()
+      require "configs.zenmode"
+    end,
+  },
+
   {
     "epwalsh/obsidian.nvim",
     version = "*",
@@ -79,28 +136,33 @@ return {
     opts = {
       workspaces = {
         { name = "personal", path = "~/vaults/personal" },
-        { name = "work",     path = "~/vaults/work" },
+        { name = "work", path = "~/vaults/work" },
       },
       notes_subdir = "personal/Notes", -- Specify the default subdirectory for new notes
       templates = {
         folder = "~/vaults/Templates", -- Path to your template
-        insert_on_new_file = true,     -- Automatically insert template content in new files
+        insert_on_new_file = false, -- Automatically insert template content in new files
       },
     },
+    autometadata = false,
   },
+
   {
-    'gelguy/wilder.nvim',
+    "gelguy/wilder.nvim",
     lazy = false,
     config = function()
-      require("configs.wilder")
+      require "configs.wilder"
     end,
   },
+
   {
-    'romgrk/fzy-lua-native', -- Ensure lua_fzy is included
+    "romgrk/fzy-lua-native", -- Ensure lua_fzy is included
     lazy = false,
   },
+
   {
     "iamcco/markdown-preview.nvim",
+    enabled = false,
     cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
     build = "cd app && npm install",
     init = function()
@@ -108,41 +170,43 @@ return {
     end,
     ft = { "markdown" },
   },
+
   {
-    'MeanderingProgrammer/render-markdown.nvim',
+    "MeanderingProgrammer/render-markdown.nvim",
     config = function()
       -- Optional: Add custom configurations here
-      require("render-markdown").setup({
+      require("render-markdown").setup {
         -- Example options; adjust according to the plugin’s docs
         preview = true,
         live_update = true,
-      })
+      }
     end,
-    ft = { 'markdown' } -- Load only for markdown files
+    ft = { "markdown" }, -- Load only for markdown files
   },
 
   {
-    'Exafunction/codeium.vim',
-    event = 'BufEnter',
+    "Exafunction/codeium.vim",
+    event = "BufEnter",
     config = function()
       -- Change '<C-g>' here to any keycode you like.
-      vim.keymap.set('i', '<C-g>', function()
-        return vim.fn['codeium#Accept']()
+      vim.keymap.set("i", "<C-g>", function()
+        return vim.fn["codeium#Accept"]()
       end, { expr = true })
-      vim.keymap.set('i', '<C-,>', function()
-        return vim.fn['codeium#CycleCompletions'](5)
+      vim.keymap.set("i", "<C-,>", function()
+        return vim.fn["codeium#CycleCompletions"](5)
       end, { expr = true })
-    end
+    end,
   },
 
   {
 
     "nvim-neotest/neotest",
 
-    dependencies = { "nvim-neotest/nvim-nio",
+    dependencies = {
+      "nvim-neotest/nvim-nio",
       "nvim-neotest/neotest-python",
       "nvim-neotest/neotest-jest",
-      "alfaix/neotest-gtest"
+      "alfaix/neotest-gtest",
     },
 
     opts = {
@@ -158,7 +222,7 @@ return {
       adapters = {
         ["neotest-python"] = {
           dap_enabled = true,
-          runner = "pytest"
+          runner = "pytest",
         },
         ["neotest-jest"] = {
           jestCommand = "npm test --",
@@ -166,8 +230,8 @@ return {
           env = { CI = true },
         },
         ["neotest-gtest"] = {
-          command = "build/tests"
-        }
+          command = "build/tests",
+        },
       },
 
       -- Example for loading neotest-golang with a custom config
@@ -191,19 +255,17 @@ return {
       quickfix = {
 
         open = function()
-          if LazyVim.has("trouble.nvim") then
-            require("trouble").open({ mode = "quickfix", focus = false })
+          if LazyVim.has "trouble.nvim" then
+            require("trouble").open { mode = "quickfix", focus = false }
           else
-            vim.cmd("copen")
+            vim.cmd "copen"
           end
         end,
-
       },
-
     },
 
     config = function(_, opts)
-      local neotest_ns = vim.api.nvim_create_namespace("neotest")
+      local neotest_ns = vim.api.nvim_create_namespace "neotest"
 
       vim.diagnostic.config({
 
@@ -216,14 +278,10 @@ return {
 
             return message
           end,
-
         },
-
       }, neotest_ns)
 
-
-
-      if LazyVim.has("trouble.nvim") then
+      if LazyVim.has "trouble.nvim" then
         opts.consumers = opts.consumers or {}
 
         -- Refresh and auto close trouble after running tests
@@ -238,8 +296,6 @@ return {
 
             local tree = assert(client:get_position(nil, { adapter = adapter_id }))
 
-
-
             local failed = 0
 
             for pos_id, result in pairs(results) do
@@ -249,7 +305,7 @@ return {
             end
 
             vim.schedule(function()
-              local trouble = require("trouble")
+              local trouble = require "trouble"
 
               if trouble.is_open() then
                 trouble.refresh()
@@ -264,8 +320,6 @@ return {
           end
         end
       end
-
-
 
       if opts.adapters then
         local adapters = {}
@@ -303,8 +357,6 @@ return {
         opts.adapters = adapters
       end
 
-
-
       require("neotest").setup(opts)
     end,
 
@@ -333,7 +385,6 @@ return {
       { "<leader>tw", function() require("neotest").watch.toggle(vim.fn.expand("%")) end,                 desc = "Toggle Watch" },
 
     },
-
   },
   --
   -- {
@@ -353,20 +404,37 @@ return {
       "nvim-lua/plenary.nvim",
     },
     keys = {
-      { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
-    }
+      { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" },
+    },
   },
 
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
-        "vim", "lua", "vimdoc",
-        "html", "css", "c", "cpp",
-        "csv", "gitattributes", "java",
-        "javascript", "json", "lua", "make",
-        "markdown", "markdown_inline", "python", "rust", "sql",
-        "tsx", "typescript", "vim", "yaml"
+        "vim",
+        "lua",
+        "vimdoc",
+        "html",
+        "css",
+        "c",
+        "cpp",
+        "csv",
+        "gitattributes",
+        "java",
+        "javascript",
+        "json",
+        "lua",
+        "make",
+        "markdown",
+        "markdown_inline",
+        "python",
+        "rust",
+        "sql",
+        "tsx",
+        "typescript",
+        "vim",
+        "yaml",
       },
     },
   },

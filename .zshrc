@@ -143,21 +143,30 @@ alias music="ncmpcpp"
 alias cat="bat --theme=base16"
 alias ls='eza --icons=always --color=always'
 alias ll='eza --icons=always --color=always -la'
+alias ltree='eza --icons=always --color=always --tree'
 alias .2='cd ../..'
 alias .3='cd ../../..'
 alias .4='cd ../../../..'
 alias zconf="nvim ~/.zshrc"
 alias v="nvim"
 alias fetch='colorscript -e zfetch'
-alias tn="tmux new -s $(pwd | sed 's:.*/::')"
 alias z="zathura"
 alias man="batman"
-alias brain="brain.sh"
 
 # my bash scripts aliases
 alias sortNotes="sortNotesByTags.sh"
 alias moveNotes="moveObsidianNotes.sh"
 alias downloader="VideoDownloader.sh"
+alias ts="tn.sh"
+alias batri="batteryInfo.sh"
+alias brain="brain.sh"
+
+# my todos
+alias todoshow="python $HOME/MyProjects/ToDoCli/todocli.py show"
+alias todoadd="python $HOME/MyProjects/ToDoCli/todocli.py add $1 $2"
+alias tododelete="python $HOME/MyProjects/ToDoCli/todocli.py delete $1"
+alias todocomplete="python $HOME/MyProjects/ToDoCli/todocli.py complete $1"
+alias todoupdate="python $HOME/MyProjects/ToDoCli/todocli.py update $1 --task $2"
 
 # my default exports
 # export MANPAGER="sh -c 'col -bx | bat -l man -p'"

@@ -179,3 +179,5 @@ $HOME/.local/bin/colorscript -r
 
 # setup zoxide
 eval "$(zoxide init --cmd cd zsh)"
+
+eval "$(starship init zsh)"

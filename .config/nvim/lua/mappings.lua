@@ -53,4 +53,7 @@ map("v", "<leader>dl", '"_d<cr>', opts)
 map("n", "sh", "^", { desc = "go to the begining of the line" })
 map("n", "sl", "$", { desc = "go to the end of the line" })
 
+-- search through todos
+map("n", "<leader>td", ":TodoTelescope<cr>", { desc = "search todos" })
+
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")

@@ -5,6 +5,101 @@ return {
     opts = require "configs.conform",
   },
   {
+    "jay-babu/mason-nvim-dap.nvim",
+    enabled = true,
+    lazy = true,
+    dependencies = "mason.nvim",
+    cmd = { "DapInstall", "DapUninstall" },
+    opts = {
+      -- Makes a best effort to setup the various debuggers with
+      -- reasonable debug configurations
+      automatic_installation = true,
+
+      -- You can provide additional configuration to the handlers,
+      -- see mason-nvim-dap README for more information
+      handlers = {},
+
+      -- You'll need to check that you have the required things installed
+      -- online, please don't ask me how to install them :)
+      ensure_installed = {
+        -- Update this to ensure that you have the debuggers for the langs you want
+      },
+    },
+    -- mason-nvim-dap is loaded when nvim-dap loads
+    config = function() end,
+  },
+  {
+    "mfussenegger/nvim-dap",
+    enabled = true,
+    lazy = true,
+    dependencies = {
+      "rcarriga/nvim-dap-ui",
+      "mfussenegger/nvim-dap-python",
+      {
+        "theHamsta/nvim-dap-virtual-text",
+        opts = {},
+      },
+      "nvim-lua/plenary.nvim",
+    },
+    keys = {
+      { "<leader>d", "", desc = "+debug", mode = { "n", "v" } },
+      {
+        "<leader>db",
+        function()
+          require("dap").toggle_breakpoint()
+        end,
+        desc = "Toggle Breakpoint",
+      },
+      {
+        "<leader>dc",
+        function()
+          require("dap").continue()
+        end,
+        desc = "Run/Continue",
+      },
+      {
+        "<leader>dr",
+        function()
+          require("dap").repl.toggle()
+        end,
+        desc = "Toggle REPL",
+      },
+      -- Add other keybindings as needed
+    },
+    config = function()
+      require("dap").set_log_level "TRACE"
+      local dap, dapui = require "dap", require "dapui"
+      require("dap-python").setup "python3"
+      require("dapui").setup()
+      dap.listeners.before.attach.dapui_config = function()
+        dapui.open()
+      end
+      dap.listeners.before.launch.dapui_config = function()
+        dapui.open()
+      end
+      dap.listeners.before.event_terminated.dapui_config = function()
+        dapui.close()
+      end
+      dap.listeners.before.event_exited.dapui_config = function()
+        dapui.close()
+      end
+      require("mason-nvim-dap").setup {
+        ensure_installed = { "python", "cppdbg", "js-debug-adapter", "node-debug2-adapter" },
+        handlers = {},
+        automatic_installation = true,
+      }
+      vim.api.nvim_set_hl(0, "DapStoppedLine", { default = true, link = "Visual" })
+
+      local dap_signs = {
+        Stopped = { "🛑", "DiagnosticWarn" },
+        Breakpoint = { "🔴", "DiagnosticError" },
+      }
+      for name, sign in pairs(dap_signs) do
+        vim.fn.sign_define("Dap" .. name, { text = sign[1], texthl = sign[2], linehl = "", numhl = "" })
+      end
+    end,
+  },
+  {
     "folke/snacks.nvim",
     priority = 1000,
     lazy = false,
@@ -89,7 +184,7 @@ return {
       },
       notifier = {
         enabled = true,
-        timeout = 3000,
+        timeout = 5000,
       },
       quickfile = { enabled = true },
       statuscolumn = { enabled = true },
@@ -260,7 +355,7 @@ return {
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
     enabled = true,
-    lazy = false,
+    lazy = true,
     config = function()
       require "configs.todo-comments"
     end,

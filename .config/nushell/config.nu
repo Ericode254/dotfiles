@@ -1,4 +1,7 @@
-# scripts to be executed during start up
+$env.config = {
+    show_banner: false # true or false to enable or disable the welcome banner at startup
+}
+
 ~/.local/bin/tn.sh
 ~/.local/bin/colorscript -r
 
@@ -31,6 +34,8 @@ source ~/.cache/carapace/init.nu
 
 # initialize zoxide
 source ~/.zoxide.nu
+alias cd = z
+alias cdi = zi
 
 # color theme
 source ~/nu_scripts/themes/nu-themes/ayu.nu

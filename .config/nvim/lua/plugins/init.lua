@@ -355,7 +355,7 @@ return {
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
     enabled = true,
-    lazy = true,
+    lazy = false,
     config = function()
       require "configs.todo-comments"
     end,

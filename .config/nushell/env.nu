@@ -104,6 +104,8 @@ $env.PATH = ($env.PATH | split row (char esep) | append "~/.local/bin")
 $env.EDITOR = "nvim"
 $env.XDG_CONFIG_HOME = $"($env.HOME)/.config"
 
+zoxide init nushell | save -f ~/.zoxide.nu
+
 starship init nu | save -f ~/.cache/starship/init.nu
 
 ## ~/.config/nushell/env.nu
@@ -111,4 +113,3 @@ $env.CARAPACE_BRIDGES = 'zsh,fish,bash,inshellisense' # optional
 mkdir ~/.cache/carapace
 carapace _carapace nushell | save --force ~/.cache/carapace/init.nu
 
-zoxide init nushell | save -f ~/.zoxide.nu

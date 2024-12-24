@@ -365,6 +365,7 @@ return {
     "folke/trouble.nvim",
     opts = {}, -- for default options, refer to the configuration section for custom setup.
     cmd = "Trouble",
+    lazy = false,
     keys = {
       {
         "<leader>ll",
@@ -372,7 +373,7 @@ return {
         desc = "Diagnostics (Trouble)",
       },
       {
-        "<leader>xX",
+        "<leader>tb",
         "<cmd>Trouble diagnostics toggle filter.buf=0<cr>",
         desc = "Buffer Diagnostics (Trouble)",
       },
@@ -392,7 +393,7 @@ return {
         desc = "Location List (Trouble)",
       },
       {
-        "<leader>xQ",
+        "<leader>tq",
         "<cmd>Trouble qflist toggle<cr>",
         desc = "Quickfix List (Trouble)",
       },
@@ -532,10 +533,10 @@ return {
         { name = "personal", path = "~/vaults/personal" },
         { name = "work", path = "~/vaults/work" },
       },
-      notes_subdir = "personal/Notes", -- Specify the default subdirectory for new notes
+      -- notes_subdir = "personal/Notes", -- Specify the default subdirectory for new notes
       templates = {
         folder = "~/vaults/Templates", -- Path to your template
-        insert_on_new_file = false, -- Automatically insert template content in new files
+        insert_on_new_file = true, -- Automatically insert template content in new files
       },
     },
     autometadata = false,

@@ -16,7 +16,7 @@ map(
   { desc = "Obsidian: Create Note from Template" }
 )
 map("n", "<leader>oT", "<cmd>ObsidianTemplate<cr>", { desc = "Obsidian: Create Note from Template" })
-map("n", "<leader>d", "<cmd>lua vim.diagnostic.open_float(nil, { scope = 'line' })<cr>", { desc = "Diagnostic" })
+-- map("n", "<leader>d", "<cmd>lua vim.diagnostic.open_float(nil, { scope = 'line' })<cr>", { desc = "Diagnostic" })
 map(
   "n",
   "<leader>mn",

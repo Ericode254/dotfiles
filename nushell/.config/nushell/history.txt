@@ -1,0 +1,4603 @@
+mv ~/.config/nushell/ nushell/.config/nushell
+stow nushell
+stow --adopt nushell
+ls
+cd nushell/
+ls
+cd .config/
+ls
+cd nushell/
+ls
+cd
+cd .config/
+cd nushell/
+ls
+cd
+clear
+cd
+clear
+ls
+cargo install nu_plugin_highlight
+ls
+chsh -l
+which nu
+cd .config
+ls
+cd nushell
+ls
+v config.nu
+nvim config.nu
+which nu_plugin_highlight
+plugin add /home/code/.cargo/bin/nu_plugin_highlight
+highlight --list-themes
+nu --version
+$nu.env-path
+ls
+v env.nu
+nvim env.nu
+v config.nu
+nvim config.nu
+source config.nu
+mkdir ~/.cache/starship
+source config.nu
+source env.nu
+source config.nu
+nvim config.nu
+source config.nu
+nvim config.nu
+source config.nu
+ls
+highlight --list-themes
+yay carapace-bin
+ls
+nvim config.nu
+nvim env.nu
+v config.nu
+nvim config.nu
+source env.nu
+source config.nu
+echo $SHELL
+$env.SHELL
+which nu
+ls
+..
+ls
+cd wezterm/
+ls
+cd config/
+ls
+v launch.lua
+nvim launch.lua
+highlight --list-themes
+config nu
+$env.EDITOR=nvim
+$env.EDITOR
+let-env EDITOR = "nvim"<\n>
+let-env EDITOR = $'nvim'<\n>
+let-env EDITOR
+$env.EDITOR = "nvim"
+config nu
+cd .config
+ls
+cd nushell
+ls
+nvim env.nu
+cd
+cd .local/
+cd bin/
+ls
+pwd
+path add /home/code/.local/bin
+path add "/home/code/.local/bin"
+cd
+cd .config
+cd nushell
+ls
+nvim env.nu
+source env.nu
+nvim env.nu
+source env.nu
+nvim env.nu
+source env.nu
+ls
+$env.PATH
+colorscript
+ls
+clear
+ls
+clear
+cat config.nu
+$nu.config-path
+cat config.nu
+$env
+cd vaults/
+cd personal
+ls
+cd CodesNotes/
+ls
+cd Linux/
+ls
+nvim xdgOpenCommand.md
+man xdg-open
+wikiman
+config nu
+cd
+cd .config
+cd nushell/
+ls
+nvim config.nu
+nvim env.nu
+source env.nu
+ls
+nvim config.nu
+source config.nu
+$env.EDITOR
+config nu
+$env.EDITOR
+nvim .zshrc
+config nu
+config.nu
+cd .config
+cd nushell/
+ls
+source config.nu
+config ni
+config nu
+source config.nu
+nvim config.nu
+source config.nu
+nvim env.nu
+source env.nu
+config.nu
+$nu.config-path
+$env.XDG_CONFIG_HOME
+$env.HOME
+source config.nu
+config.nu
+cat config.nu
+config nu
+ts
+tn
+cd
+ll
+all
+ls -la
+clear
+ls
+alias v = nvim
+cd .local/
+cd bin/
+ls
+v VideoDownloader.sh
+alias ts = tn
+ts
+alias ts = tn.sh
+ts
+ls
+alias downloader = VideoDownloader.sh
+cd .local/
+cd bin/
+v VideoDownloader.sh
+cd
+cd -
+ls
+cd
+ls
+clear
+cd .config
+cd nushell/
+ls
+nvim config.nu
+source config.nu
+tn.sh
+ts
+cd
+cd nushell/
+cd .config
+cd nushell/
+ls
+v config.nu
+nvim config.nu
+source config.nu
+v config.nu
+nvim config.nu
+source config.nu
+nvim config.nu
+source config.nu
+exit
+ts
+eza
+ls
+ls | sort-by modified
+ls | sort-by modified --reverse
+ps | where cpu > 5
+cd
+cd MyProjects/
+ls
+cd Portfolio/
+ls
+open README.md
+open README.md | highlight
+..
+ls
+cd djangoAuth/
+cd myproject/
+ls
+open db.sqlite3
+..
+cd ToDoCli/
+ls
+open todo.db
+v todocli.py
+open todo.db
+cat config.nu
+cd
+cd .cache/starship/
+ls
+v init.nu
+overlay list
+nufetch
+ls
+clear
+cd dotfiles/
+config nu
+clear
+ls
+..
+ls
+clear
+v
+clear
+ls
+clear
+cd MyProjects/
+ls
+cd Portfolio/
+cd
+cd .cache/starship/
+ls
+$env.CMD_DURATION_MS
+v init.nu
+cd
+cd .config
+v starship.toml
+cd
+cd MyProjects/
+ls
+cd Portfolio/
+man stow
+cd dotfiles/
+cd .config
+ls
+cp -r ~/.config/nushell/ .
+..
+stow .
+stow --adopt .
+clear
+ls
+cd .config
+ls
+cd
+cd .config
+ls
+cd
+cd dotfiles/
+cd .config
+ls
+..
+stow --adopt nushell
+ls
+cd .config
+ls
+cd nushell/
+ls
+..
+ls
+stow --adopt nushell
+ls
+..
+ls
+cd
+cd .config
+ls
+cd nushell/
+ls
+cd
+cd dotfiles/
+ls
+v README.md
+open README.md | highlight
+ls
+git status
+cd
+ls
+cd dotfiles/
+ls
+cd .config
+ls
+..
+ls
+cd
+ls
+rm -rf | where type == "symlink"
+ls | where type == "symlink"
+ls | where type == "symlink" and name != "RiceInstaller"
+ls | where type == "symlink" and name != "RiceInstaller" | rm -rf
+ls | where type == "symlink" and name != "RiceInstaller" | xargs -n rm -rf
+ls | where type == "symlink" and name != "RiceInstaller" | xargs  rm -rf
+ls
+v .
+cd
+ls
+ls | where name == ".zshrc"
+man stow
+cd .config
+cd tmux/
+ls
+v tmux.conf
+cd
+man xargs
+cd .local/
+cd bin/
+ls
+cd .config
+cd nushell/
+ls
+v config.nu
+source config.nu
+cd
+cd vaults/
+ls
+cd personal/
+cd Notes/
+ls
+opem nvim-surround.md | highlight
+open nvim-surround.md | highlight
+ls
+cd
+..
+ls
+..
+ls
+cd MyLearning/
+ls
+..
+cd MyProjects/
+ls
+cd ToDoCli/
+ls
+cd .config
+cd nushell/
+ls
+v config.nu
+cd
+ls
+cd Top-5-Bootloader-Themes/
+ls
+source config.nu
+v config.nu
+source config.nu
+open CONTRIBUTING.md
+v config.nu
+source config.nu
+open CONTRIBUTING.md | highlight
+..
+clear
+downloader 'https://youtu.be/HL1XavoNqsM?si=44QLcTU_vOAgJg59'
+btop
+ls
+cd /etc
+ls
+cd
+ls
+btop
+clear
+v
+cd dotfiles/
+ls
+btop
+ps | where cpu > 5
+btop
+man mpv
+..
+cd .config
+cd wezterm/
+ls
+cd events/
+ls
+..
+ls
+v wezterm.lua
+ls
+rm -rf events/
+ls
+cd utils/
+ls
+v platform.lua
+v math.lua
+ls
+v cells.lua
+..
+ls
+cd config/
+ls
+v domains.lua
+ls
+v init.lua
+..
+ls
+..
+cd nushell/
+ls
+v config.nu
+source config.nu
+cd ../..
+v config.nu
+source config.nu
+v config.nu
+source config.nu
+v config.nu
+source config.nu
+v config.nu
+source config.nu
+cd2
+cd -
+man rm
+v config.nu
+source config.nu
+sl
+ls
+v history.txt
+env.nu
+config nu
+source config.nu
+cd .config
+cd nushell/
+source config.nu
+cd dotfiles/
+cd
+cd dotfiles/
+cd
+cd .config
+cd dotfiles/
+cd nushell/
+ls
+v config.nu
+v env.nu
+source env.nu
+source config.nu
+cd
+cd dotfiles/
+cd
+cd .config
+cd dotfiles/
+cd
+git clone git@github.com:nushell/nupm.git
+cd nupm/
+use nupm/<\n>nupm install --force --path .
+nupm
+cd
+nupm
+git clone https://github.com/nushell/nu_scripts
+nupm install --path --force nu_scripts
+cd nu_scripts/
+nupm install --path --force nu_scripts
+ls
+use nupm/
+use nupm
+nupm install --path --force nu_scripts
+cd
+nupm install --path --force nu_scripts
+cd nu_scripts/
+ls
+open README.md | highlight
+source nu-themes/catppuccin-mocha.nu
+nu ./themes/nu-themes/catppuccin-mocha.nu
+clear
+ls
+nupm install --path --force nu_scripts
+use nupm
+ls
+use nupm/<\n>nupm install --force --path .
+cd nupm/
+use nupm/<\n>nupm install --force --path .
+cd
+nupm install --path --force nu_scripts
+cd nu_scripts/
+nupm install --path --force nu_scripts
+//
+cd
+nupm install --path --force nu_scripts
+ls
+cd nu_scripts/
+ls
+cd themes/
+ls
+..
+nupm install --path --force themes/
+cd
+source nu-themes/catppuccin-mocha.nu
+cd nu_scripts/
+cd themes/
+open README.md | highlight
+cd
+cd .config
+cd nushell/
+v config.nu
+source config.nu
+ls
+cd .config
+cd nushell/
+v config.nu
+source config.nu
+ls
+cd
+ls
+cd config/
+cd .config
+cd nushell/
+v config.nu
+source config.nu
+ls
+cd dotfiles/
+v env.nu
+v config.nu
+source env.nu
+source config.nu
+cd
+cd dotfiles/
+..
+cd .config
+cd dotfiles/
+downloader 'https://youtu.be/SPUrRh3ryAE?si=C5qjRxogdTQCfRcj'
+downloader 'https://youtu.be/5u604lTkGAY?si=qCtmNlx9OaRJod4q'
+ls
+..
+ls
+cd nu_scripts/
+ls
+cd example-config/
+ls
+v config.nu
+v init.nu
+..
+ls
+cd assets/
+ls
+v gh-emoji.json
+..
+ls
+cd nu-hooks/
+ls
+cd nu-hooks/
+ls
+cd command_not_found/
+ls
+open README.md | highlight
+..
+ls
+cd command_not_found/
+ls
+v README.md
+clear
+ls
+exit
+exit
+env nu
+exit
+v env.nu
+ls
+exit
+ts
+exit
+ls
+cd command_not_found/
+ls
+pwd
+cd
+cd .config
+ls
+cd nushell/
+ls
+v config.nu
+source config.nu
+ls
+sl
+ls
+exit
+ts
+ls
+v config.nu
+source config.nu
+ls
+clear
+ls
+..
+cd tmux/
+ls
+v tmux.conf
+exit
+ts
+exit
+v tmux.conf
+exit
+ts
+..
+ts
+cd
+cd .config
+cd wezterm/
+ls
+cd config/
+ls
+v appearance.lua
+exit
+tmux a
+ls
+clear
+ls
+clear
+exit
+ts
+clear
+ls
+cd .config
+cd dotfiles
+..
+ls
+ls -la
+v .zoxide.nu
+cd .config
+cd nushell/
+ls
+v config.nu
+source config.nu
+cd dotfiles
+cdi
+cd
+ls
+clear
+cd .config
+zoxide .config
+z .config/
+ts
+cd .config
+config nu
+source ~/.config/nushell/config.nu
+cd .config
+config nu
+source ~/.config/nushell/config.nu
+cd .config
+config nu
+source ~/.config/nushell/env.nu
+source ~/.config/nushell/config.nu
+cd .config
+v .zoxide.nu
+nu --version
+config nu
+source ~/.config/nushell/env.nu
+source ~/.config/nushell/config.nu
+cd .config
+cd dotfiles
+cd nushell/
+ls
+v config.nu
+source ~/.config/nushell/config.nu
+cd dotfiles
+clear
+ls
+cd
+ls
+cd MyProjects/
+ls
+clear
+exit
+exit
+ts
+ls
+clear
+cd .config
+z .config/
+source ~/.config/nushell/env.nu
+source ~/.config/nushell/config.nu
+cd .config
+config nu
+source ~/.config/nushell/env.nu
+source ~/.config/nushell/config.nu
+cd .config
+cd wezterm/
+ls
+cd colors/
+ls
+v custom.lua
+ls
+..
+ls
+cd config/
+ls
+cd2
+cd tmux/
+ls
+v tmux.conf
+exit
+ts
+exit
+v tmux.conf
+exit
+ts
+cd .config
+cd tmux
+v tmux.conf
+exit
+ts
+v tmux.conf
+exit
+ts
+exit
+cd .config
+cd wezterm/
+ls
+cd colors/
+ls
+..
+cd config/
+ls
+v appearance.lua
+exit
+ts
+v appearance.lua
+ls
+v general.lua
+v appearance.lua
+..
+ls
+cd backdrops/
+ls
+..
+ls
+cd utils/
+ls
+v backdrops.lua
+cd
+cd nu_scripts/
+cd themes/
+ls
+cd nu-themes/
+ls
+v ayu.nu
+cd tmux
+cd
+v .zoxide.nu
+cd tmux
+source ~/.config/nushell/env.nu
+source ~/.config/nushell/config.nu
+cd tmux
+cd .config
+ls
+cd tmux
+v tmux.conf
+..
+ls
+..
+v .zoxide.nu
+..
+v .zoxide.nu
+exit
+ts
+cd
+v .zoxide.nu ]
+v .zoxide.nu
+cd tmux
+source ~/.config/nushell/config.nu
+cd tmux
+cd
+ls
+cd .config
+ls
+cd tmux/
+ls
+v tmux.conf
+tmux ls
+cd
+ls
+cd dotfiles
+ls
+..
+cd nu_scripts/
+ls
+cd modules/
+ls
+cd nvim
+ls
+v mod.nu
+..
+ls
+cd fuzzy/
+ls
+open README.md | highlight
+..
+ls
+cd git/
+ls
+open README.md | highlight
+..
+cd gitv2/
+ls
+open README.md | highlight
+..
+ls
+cd
+ls
+cd dotfiles/
+..
+clear
+cd .config
+ls
+yazi
+clear
+cd nushell/
+ls
+v config.nu
+cd
+v .zshrc
+cd -
+v config.nu
+source ~/.config/nushell/config.nu
+v config.nu
+source ~/.config/nushell/config.nu
+v config.nu
+source ~/.config/nushell/config.nu
+v config.nu
+source ~/.config/nushell/config.nu
+exit
+ts
+cd .config
+cd nushell/
+clear
+cd
+cd .config
+cd nushell/
+v config.nu
+source ~/.config/nushell/config.nu
+v config.nu
+source ~/.config/nushell/config.nu
+v config.nu
+source ~/.config/nushell/config.nu
+v config.nu
+source ~/.config/nushell/config.nu
+v config.nu
+source ~/.config/nushell/config.nu
+v config.nu
+source ~/.config/nushell/config.nu
+todoshow
+v .zshrc
+cd nu_scripts/
+ls
+cd aliases/
+ls
+cd eza/
+ls
+v eza-aliases.nu
+..
+ls
+cd git/
+ls
+v git-aliases.nu
+pwd
+v config.nu
+source ~/.config/nushell/config.nu
+todocomplete 1
+todocomplete 2
+cd dotfiles/
+cd
+v .zoxide.nu
+cd dotfiles/
+gs
+cd nushell/
+cd
+z nushell
+v config.nu
+source ~/.config/nushell/config.nu
+cd dotfiles/
+cd -
+ls
+cd nu_scripts/
+cd aliases/
+ls
+cd
+cd dotfiles/
+gsb
+cd nushell/
+source ~/.config/nushell/config.nu
+cd dotfiles/
+gsb
+gsb
+exit
+v git-aliases.nu
+exit
+tmux a
+cd
+clear
+cd nushell/
+v .zoxide.nu
+cd .config
+cd nushell/
+ls
+v config.nu
+source ~/.config/nushell/config.nu
+clear
+cd dotfiles/
+gsb
+cd
+cd dotfiles/
+lazygit
+gsb
+cd
+clear
+cd MyProjects/
+ls
+cd studyplannerclient/
+v .
+..
+ls
+cd Portfolio/
+v .
+..
+cd studyplannerclient/
+v .
+clear
+..
+cd Portfolio/
+source ~/.config/nushell/config.nu
+cd Portfolio/
+cd
+z
+z Portfolio/
+~
+v .zoxide.nu
+source ~/.config/nushell/config.nu
+clear
+cd MyProjects/
+source ~/.config/nushell/env.nu
+source ~/.config/nushell/config.nu
+clear
+cd MyProjects/
+ts
+..
+cd Portfolio/
+MyProjects/
+ls
+Portfolio/
+v .
+lazygit
+ls
+cd
+z
+~
+v .zoxide.nu
+source ~/.config/nushell/env.nu
+source ~/.config/nushell/config.nu
+clear
+cd .config
+v .zoxide.nu
+source ~/.config/nushell/config.nu
+clear
+cd .config
+v .zoxide.nu
+source ~/.config/nushell/config.nu
+cd
+tmux a
+cd
+cd nushell/
+cd .config
+cd nushell/
+cd
+cd nushell/
+cdi
+v .zoxide.nu
+nushell
+clear
+cd
+fzf
+man fzf
+fzf --tmux=center
+.config
+nushell
+ls
+tmux a
+cd .config
+cd nushell/
+ls
+v config.nu
+source ~/.config/nushell/config.nu
+cd nushell/
+tmux a
+cd dotfiles/
+fzft
+tmux a
+cd -
+v config.nu
+source ~/.config/nushell/config.nu
+fzf
+fzf
+tmux a
+v config.nu
+fzf --tmux=center
+alias fzft = fzf --tmux=center
+fzft
+tmux a
+v config.nu
+source ~/.config/nushell/env.nu
+source ~/.config/nushell/config.nu
+v .
+tmux a
+fzft
+cd
+cd -
+ls
+v config.nu
+source ~/.config/nushell/config.nu
+exit
+ts
+tmux ls
+clear
+config nu
+exit
+source ~/.config/nushell/config.nu
+exit
+tmux ls
+clear
+ls
+clear
+fzft
+cd nushell/
+z nushell
+clear
+ls
+v config.nu
+fzf
+..
+cd wezterm/
+ls
+cd config/
+ls
+v bindings.lua
+clear
+fzf
+cd2
+cd tmux/
+tmux a
+cd nushell/
+v .zoxide.nu
+source ~/.config/nushell/config.nu
+cd nushell/
+v .zoxide.nu
+cd .config
+cd nushell/
+ls
+v config.nu
+tmux ls
+exit
+v tmux.conf
+cd
+cd dotfiles/
+cd nushell/
+exit
+source ~/.config/nushell/config.nu
+tmux ls
+cd dotfiles/
+cd nushell/
+cd dotfiles/
+fzf
+fg
+exit
+cd .config
+.config
+nushell
+config nu
+source ~/.config/nushell/config.nu
+tmux ls
+exit
+tmux a
+clear
+cd .config
+ls
+cd .config
+cd nushell/
+ls
+v config.nu
+todoshow
+todoupdate 1 "Tmux"
+cd
+cd MyProjects/
+cd ToDoCli/
+todocli.py update --help
+python todocli.py update --help
+todoshow
+todoupdate 1 --task "Tmux"
+tododelete 1
+todoadd "Learn Typescript" "Code"
+todoadd "Learn vim" "Learn"
+cd
+cd .config
+cd nushell/
+ls
+v config.nu
+exit
+clear
+ll
+clear
+cd dotfiles/
+ltree
+echo btop/ | describe
+cd .config
+ls
+echo starship.toml | describe
+describe starship.toml
+man describe
+describe --help
+echo starship.toml | describe -d
+starship.toml | describe -d
+cd
+cd MyProjects/
+cd Portfolio/
+ls
+open package.json
+open package.json | get name
+clear
+ls
+cd
+ls
+cd dotfiles/
+gsb
+git show
+clear
+man ga
+type ga
+clear
+tmux ls
+clear
+cd nu_scripts/
+ls
+cd aliases/
+ls
+cd git
+ls
+v git-aliases.nu
+..
+cd chezmoi/
+ls
+v chezmoi-aliases.nu
+..
+cd exa
+ls
+v exa-aliases.nu
+exa
+exa --icons
+cd
+ls
+clear
+ls
+cd .config
+ls
+cd btop/
+ls
+..
+ls
+..
+ls
+open README.md | highlight
+ls
+clear
+ls
+ll
+clear
+..
+ls
+cd vaults/
+ls
+cd personal/
+ls
+cd Notes/
+ls
+open nvim-surround.md | highlight
+..
+cd CodesNotes/
+ls
+cd Vim/
+ls
+cd
+cd .config
+cd nushell/
+ls
+v config.nu
+cd
+cd MyProjects/
+ls
+cd Portfolio/
+gsb
+v .
+..
+cd studyplannerclient/
+v .
+ls
+..
+ls
+cd Systems/
+l
+ls
+cd HospitalSystemClient/
+gsb
+cd MyProjects/
+ls
+cd studyplannerclient/
+v .
+v .
+ls
+cd
+cd dotfiles/
+gsb
+..
+cd /
+ls
+cd /boot
+ls
+cd
+ls
+todoshow
+clear
+v
+cd MyProjects/
+ls
+cd EgerSaleClient/
+cd
+z nushell
+..
+cd nvim
+ls
+cd lua
+ls
+cd plugins/
+ls
+tmux ls
+exit
+exit
+v init.lua
+..
+cd configs/
+ls
+v todo-comments.lua
+..
+ls
+v mappings.lua
+v
+ls
+cd configs/
+ls
+v todo-comments.lua
+gsb
+cd
+ls
+cd .config
+cd nushell/
+ls
+v config.nu
+source ~/.config/nushell/config.nu
+config nu
+source ~/.config/nushell/config.nu
+clear
+exit
+clear
+ls
+v config.nu
+v env.nu
+ls
+clear
+ls
+clear
+ls
+cd
+cd dotfiles/
+gsb
+ls
+echo source ~/.config/nushell/config.nu | config.nu
+gsb
+pacman -Qm
+pacman -Qm | wc -l
+pacman -Qdt
+..
+cd .config
+cd nushell/
+ls
+v config.nu
+cd
+cd dotfiles/
+ls
+gsb
+lazygit
+cd
+ls
+man gh
+cd .config
+cd wezterm/
+ls
+cd config/
+ls
+v appearance.lua
+wikiman
+wikiman display
+man highlight
+highlight --help
+clear
+cd config/
+cd .config
+cd nushell/
+ls
+v config.nu
+source ~/.config/nushell/config.nu
+exit
+exit
+exit
+clear
+ls
+clear
+cd .config
+cd nushell/
+ls
+v env.nu
+v config.nu
+source ~/.config/nushell/config.nu
+exit
+clear
+cd dotfiles/
+exit
+clear
+cd personal/
+exit
+source ~/.config/nushell/config.nu
+clear
+cd personal/
+clear
+ls
+cd
+cd nvim
+cd lua
+ls
+cd plugins/
+ls
+v init.lua
+ls
+..
+ls
+cd configs/
+ls
+v lazy.lua
+..
+ls
+..
+ls
+v init.lua
+cd lua
+ls
+cd plugins/
+v init.lua
+..
+ls
+..
+ls
+v init.lua
+cd plugins/
+cd -
+cd
+cd nvim
+ls
+v init.lua
+cd lua
+cd plugins/
+v init.lua
+clear
+cd MyProjects/
+ls
+cd ToDoCli/
+ls
+v todocli.py
+v init.lua
+v todocli.py
+python -m pip install debugpy<\n>
+sudo pacman -S python-debugpy
+exit
+downloader 'https://youtu.be/oYzZxi3SSnM?si=JuXqPVBgnsfLlU1o'
+v todocli.py
+v todocli.py
+v init.lua
+v todocli.py
+cd MyLearning/
+ls
+cd LearnPython/
+ls
+v main.py
+..
+cd LearnCpp/
+ls
+v main.cpp
+v init.lua
+exit
+exit
+ls
+..
+ls
+todoshow
+..
+cd nvim
+ls
+v init.lua
+cd lua
+cd plugins/
+v init.lua
+..
+ls
+cd
+cd vaults/
+ls
+cd personal/
+ls
+cd Notes/
+ls
+v nvim-surround.md
+cd nvim
+ls
+cd lua
+ls
+v mappings.lua
+cd plugins/
+ls
+v init.lua
+sudo pacman -Sc
+df -h
+ls
+pacman -Qdt
+pacman -Qdt | rm -rf
+pacman -Qdt | xargs rm
+ls
+v
+v init.lua
+ls
+.
+gsb
+cd
+cd dotfiles/
+ls
+gsb
+lazygit
+..
+cd dotfiles/
+gsb
+..
+cd MyProjects/
+ls
+v EgerSaleClient/
+cd EgerSaleClient/
+gsb
+..
+cd ToDoCli/
+ls
+rm -rf typer
+ls
+cd
+todoshow
+v
+cd /
+cd home/
+ls
+cd code/
+v
+cat /etc/passwd
+v
+ls
+cd dotfiles/
+gsb
+ls
+..
+cd .config
+ls
+cd tmux/
+ls
+v tmux.conf
+..
+cd
+cd .config
+cd nushell/
+ls
+v config.nu
+cd dotfiles/
+ltree
+cd .config
+cd nushell/
+v config.nu
+..
+ls
+cd vaults/
+ls
+cd personal/
+ls
+cd Notes/
+ls
+cd
+ls
+cd dotfiles/
+clear
+lazygit
+cd
+cd MyProjects/
+ls
+cd EgerSaleClient/
+v .
+..
+cd studyplannerclient/
+gsb
+cd
+ls
+cd dotfiles/
+gsb
+..
+cd .config
+cd nushell/
+ls
+v env.nu
+ls
+v config.nu
+cd
+cd MyProjects/
+cd ToDoCli/
+v .
+ls
+..
+ls
+cd EgerSaleClient/
+ls
+v .
+config nu
+cd nvim
+cd lua
+ls
+cd plugins/
+v init.lua
+ls
+clear
+ls
+..
+ls
+cd configs/
+ls
+v wilder.lua
+cd dotfiles/
+gsb
+ls
+cd
+cd MyProjects/
+ls
+cd Portfolio/
+gsb
+..
+cd PortfolioProject/
+gsb
+..
+ls
+yay monkeytype
+cd
+smassh
+downloader 'https://youtu.be/QAb3ATOpBpE?si=1yLiETQjjfzdG1J0'
+git clone git@github.com:aradzie/keybr.com.git<\n>cd keybr.com
+npm i
+sudo mkdir -p /etc/keybr<\n>sudo cp .env.example /etc/keybr/env
+npm run compile<\n>npm run build-dev<\n>env DATABASE_CLIENT=sqlite npm test
+cd keybr.com/
+./packages/devenv/lib/initdb.ts
+npm start
+smassh
+clear
+exit
+exit
+clear
+cd keybr.com/
+npm start
+..
+ls
+cd .config
+cd nushell
+ls
+v config.nu
+ls
+cd
+cd .config
+cd nushell
+cd
+ls
+cd vaults
+cd personal
+ls
+cd Notes
+ls
+v nvim-surround.md
+cd
+cd keybr.com/
+npm start
+clear
+cd
+cd .config/
+ls
+cd
+cd .config/
+cd nvim
+ls
+v init.lua
+cd lua
+ls
+cd configs/
+ls
+v todo-comments.lua
+cd
+ls
+cd configs/
+..
+cd
+cd .config/
+cd nvim
+..
+cd
+ls
+cd
+clear
+cd .config/
+cd
+cd .config/
+..
+ls .config
+cd
+cd .config/
+ls
+clear
+todoshow
+c
+clear
+cd
+cd .config
+ls
+cd .config
+ls
+cd kitty
+ls
+cd
+ls
+cd .codeium/
+ls
+open config.json
+open onboarding.json
+open user_settings.pb
+cd database/
+ls
+cd default/
+ls
+cd 3
+ls
+cd MODEL_EMBED_6591/
+ls
+open embedding_database.sqlite
+cd
+cd .config
+cd
+clear
+cd .config/
+cd nushell
+ls
+v config.nu
+..
+cd tmux
+..
+cd
+cd tmux
+ls
+mov-cli
+yay mov-cli
+mov-cli
+mov-cli -s youtube
+mov-cli -s youtube neovim
+mov-cli -s youtube blender studios
+mov-cli -e
+yay mov-cli-youtube
+mov-cli -s youtube blender studios
+mov-cli -e
+mov-cli -s youtube blender studios
+mov-cli -s youtube neovim
+mov-cli -s youtube blender studios
+mov-cli -s youtube neovim
+downloader 'https://youtu.be/W2D5T5Gkyic?si=z3RG16VGyCPX56wR'
+yay film-central
+yay python-film-central
+sudo pacman -S python-film
+pip install film-central
+sudo pacman -S python-pipx
+pipx install film-central
+pipx install film-central --include-deps mov-cli
+pipx install film-central --include-deps=mov-cli
+mov-cli e
+mov-cli -e
+mov-cli -s films the rookie
+pipx install --include-deps film-central<\n>
+mov-cli -s films the rookie
+mov-cli -e
+mov-cli -s films the rookie
+pip show film-central<\n>
+film-central
+pipx show film-central<\n>
+pipx --global film-central<\n>
+mov-cli -l<\n>
+locate film-central
+pipx install --include-deps film-central<\n>
+mov-cli -e
+mov-cli -s films the rookie
+exit
+exit
+clear
+mov-cli -s films the rookie
+cd .local/
+ls
+cd share/
+ls
+cd pipx/
+ls
+cd venvs/
+ls
+cd film-central/
+ls
+cd bin/
+ls
+..
+ls
+cd include/
+ls
+..
+ls
+cd lib/
+ls
+..
+ls
+cd bin/
+ls
+cd
+mov-cli -e
+mov-cli -s films the rookie
+cd .local/
+ls
+cd share/
+ls
+..
+ls
+cd share/
+cd pipx/
+ls
+cd venvs/
+ls
+cd film-central/
+ls
+cd bin/
+ls
+source activate
+..
+source bin/activate.csh
+source bin/activate
+source bin/activate.fish
+zsh
+exit
+clear
+move-cli -s youtube blender
+mov-cli -s youtube blender studios
+mov-cli -e
+mov-cli -s youtube blender studios
+mov-cli -s youtube blender studios | downloader
+btop
+mov-cli -s youtube blender studios
+mov-cli -s youtube neovim
+mov-cli -e
+clear
+mov-cli -s youtube neovim
+la
+cd .local/
+ls
+cd bin/
+ls
+v VideoDownloader.sh
+downloader 'neovim'
+exit
+clear
+ls
+clear
+cd .local/
+cd bin/
+ls
+clear
+downloader 'neovim'
+ls
+v VideoDownloader.sh
+mv `Neovim in 100 Seconds.webm` ~/Videos/
+ls
+opn download.log
+open download.log
+clear
+downloader 'neovim'
+v VideoDownloader.sh
+downloader 'neovim'
+v VideoDownloader.sh
+downloader 'neovim'
+cd
+cd MyProjects/
+ls
+mkdir YoutubeDownloader
+cd YoutubeDownloader/
+touch pyplayer.py
+v pyplayer.py
+sudo pacman -S python-pytube
+v pyplayer.py
+python pyplayer.py "neovim"
+sudo pacman -S python-tqdm
+v pyplayer.py
+python pyplayer.py "neovim"
+ls
+v pyplayer.py
+python pyplayer.py "neovim"
+python pyplayer.py "https://youtu.be/CK2S-_sKFxg?si=OkJ2mipcUXarPSrV"
+v pyplayer.py
+python pyplayer.py "https://youtu.be/CK2S-_sKFxg?si=OkJ2mipcUXarPSrV"
+python pyplayer.py "https://youtu.be/CK2S-_sKFxg?si=gVJE_yQcuy-GJWHW"
+python pyplayer.py
+v pyplayer.py
+python pyplayer.py
+v pyplayer.py
+python pyplayer.py
+ls
+mpv "Neovim in 100 Seconds.mp4"
+ls
+v pyplayer.py
+cd .config/
+clear
+..
+cd
+cd .config/
+cd kitty/
+ls
+v kitty.conf
+clear
+exit
+ls
+clear
+cd MyProjects/
+ls
+v YoutubeDownloader/
+cd YoutubeDownloader/
+ls
+v pyplayer.py
+yay python3
+yay python3.13
+yay python3
+yay python313
+python --version
+python3 --version
+python3.13 --version
+python pyplayer.py
+ls
+python pyplayer.py
+ls
+ls | grep -E *.mp4
+ls | grep -E "*.mp4"
+grep -E "*.mp4" | xargs mv ~/Videos/
+ls
+ls **.mp4
+ls *.mp4
+ls *.mp4 | each { mv $it ~/Videos/ }
+ls *.mp4 | each { mv $it.name ~/Videos/ }<\n>
+ls *.mp4 | each { mv $x ~/Videos/ }<\n>
+ls *.mp4 | each { mv $x.name ~/Videos/ }<\n>
+ls *.mp4 | each { mv $x ~/Videos/$x }<\n>
+ls *.mp4 | each { mv ./$x ~/Videos/$x }<\n>
+clear
+ls
+ls *.mp4
+ls *.mp4 | get name
+ls *.mp4 | get name | each { mv $it ~/Videos/ }
+ls *.mp4 | each { mv $it ~/Videos/($it | path basename) }<\n>
+ls *.mp4 | get name | each { |it| mv $it ~/Videos/ }
+ls
+python pyplayer.py
+v pyplayer.py
+python pyplayer.py
+v pyplayer.py
+python pyplayer.py
+ls
+ls *.mp4 | get name | each { |it| mv $it ~/Videos/ }
+ls
+v pyplayer.py
+python pyplayer.py
+v pyplayer.py
+python pyplayer.py
+..
+cd YoutubeDownloader/
+gh repo create PyDown
+gh repo create "PyDown"
+cd MyProjects/
+cd YoutubeDownloader/
+pwd
+gh repo create
+git init
+git remote -v
+git push
+git push -u origin main
+git branch -M main
+git push -u origin main
+git push --set-upstream origin main<\n>
+git remote add origin git@github.com:Ericode254/PyDown.git
+git push --set-upstream origin main<\n>
+git branch
+git branch -M main<\n>git push --set-upstream origin main<\n>
+lazygit
+git branch -M main<\n>git push --set-upstream origin main<\n>
+clear
+python pyplayer.py
+clear
+pip freeze > requirements.txt
+;s
+ls
+v pyplayer.py
+touch README.md
+v README.md
+open README.md | highlight
+gsb
+lazygit
+v README.md
+touch generateRequirements.py
+v generateRequirements.py
+ls
+python generateRequirements.py
+v generateRequirements.py
+python generateRequirements.py
+v generateRequirements.py
+python generateRequirements.py
+python generateRequirements.py pyplayer.py
+ls
+open requirements.txt
+lazygit
+v pyplayer.py
+v README.md
+ls
+mv generateRequirements.py ~/.local/bin/
+ls
+ls *.mp4 | get name | each { |it| mv $it ~/Videos/ }
+ls
+python pyplayer.py
+config nu
+source ~/.config/nushell/config.nu
+exit
+clear
+cd
+pydownload
+btop
+ls
+cd
+clear
+ls
+pydownload
+cd YoutubeDownloader/
+ls
+ls *.mp4 | get name | each { |it| mv $it ~/Videos/ }
+ls
+pydownload
+sh <(curl -L https://nixos.org/nix/install) --daemon
+yay nix
+pydownload
+cat /etc/group
+usermod -aG nix-users code
+sudo usermod -aG nix-users code
+cat /etc/passwd
+cat /etc/shadow
+sudo cat /etc/shadow
+ls
+ls *.mp4 | get name | each { |it| mv $it ~/Videos/ }
+ls
+cd YoutubeDownloader/
+cd MyProjects/
+cd YoutubeDownloader/
+v pyplayer.py
+cd
+cd .config/
+cd yt-dlp/
+ls
+v config.txt
+cd
+cd MyProjects/
+cd YoutubeDownloader/
+ls
+v pyplayer.py
+clear
+cd .config/
+cd dotfiles/
+clear
+gsb
+cd
+cd MyProjects/
+cd YoutubeDownloader/
+v pyplayer.py
+cd
+pydownload
+cd YoutubeDownloader/
+cd MyProjects/
+ls
+cd YoutubeDownloader/
+v pyplayer.py
+cd
+pydownload
+cd -
+lazygit
+pydownload
+clear
+ls
+..
+ls
+exit
+clear
+source ~/.config/nushell/env.nu
+cd .config/
+ls
+cd nushell/
+ls
+v env.nu
+source ~/.config/nushell/env.nu
+source ~/.config/nushell/config.nu
+exit
+clear
+cd dotfiles/
+clear
+cd
+cd nushell/
+cd .config/
+cd nushell/
+ls
+v config.nu
+exit
+source ~/.config/nushell/config.nu
+cd dotfiles/
+cd nushell
+cdi
+fzf
+cd
+clear
+cd MyProjects/
+cd YoutubeDownloader/
+ls
+v pyplayer.py
+ccd dotfiles
+ls
+ls *.mp4 | get name | each { |it| mv $it ~/Videos/ }
+ls
+cd
+ls
+cd dotfiles/
+ls
+cd
+ls
+cd MyLearning/
+ltree
+ls
+cd
+cd MyProjects/
+ls
+cd YoutubeDownloader/
+ls
+cd .local/
+cd bin
+ls
+v pyplayer.py
+v VideoDownloader.sh
+ls
+v requirements.txt
+v pyplayer.py
+brain
+clear
+ls
+cd assets/
+ls
+cd
+cd
+ls
+cd .config
+..
+cd keybr.com/
+npm start
+clear
+ls
+v .
+cd
+cd .config
+keybindings list
+keybindings set normal escape "switch-mode insert"
+keybindings  normal escape "switch-mode insert"
+keybindings
+keybindings default
+exit
+exit
+clear
+ls
+config get keybindings.mode
+keybindings
+nu -d
+config nu
+source ~/.config/nushell/config.nu
+config nu
+exit
+source ~/.config/nushell/config.nu
+clear
+l
+ls
+clear
+cd .config
+cd bspwm/
+ls
+v bspwmrc
+clear
+ls
+clear
+cd .config
+cd bspwm/
+ls
+clear
+ls
+clear
+cd bspwm/
+ls
+..
+v bspwmrc
+cd
+cd dotfiles/
+clear
+ls
+cd
+cd .config
+cd bspwm/
+ls
+v bspwmrc
+cd
+cd .config
+cd nushell/
+ls
+v config.nu
+exit
+clear
+ls
+clear
+ls
+clear
+cd .config
+cd
+cd .config
+ls
+cd nushell/
+ls
+v config.nu
+cd
+cd MyProjects/
+cd YoutubeDownloader/
+ls
+python pyplayer.py
+fzf
+v pyplayer.py
+clear
+v pyplayer.py
+ls
+cd
+ls
+cd dotfiles/
+ls
+..
+cd nvim
+ls
+cd lua
+ls
+cd configs/
+ls
+v conform.lua
+v
+clear
+cd nvim
+v
+clear
+ls
+clear
+ls
+cd MyProjects/
+cd
+cd MyProjects/
+ls
+todoshow
+todocomplete 1
+tododelete 1
+cd ToDoCli/
+ls
+open todo.db
+open todo.db | where task == "Learn vim"
+gsb
+cd
+cd MyProjects/
+cd Portfolio/
+gsb
+git show main
+clear
+cd
+clear
+yazi
+ls
+cd MyProjects/
+ls
+cd studyplannerclient/
+gsb
+v .
+ls
+..
+ls
+cd EgerSaleClient/
+ls
+v README.md
+v .
+clear
+ls
+v .
+clear
+ls
+clear
+ls
+cd MyProjects/
+ls
+cd nvim
+clear
+ls
+clear
+ls
+v init.lua
+ls
+open README.md | highlight
+ll
+cd
+cd .config
+cd nushell/
+ls
+v config.nu
+source ~/.config/nushell/config.nu
+exit
+clear
+cd dotfiles/
+ls
+gsb
+cd kitty/
+cd
+cd .config
+cd kitty/
+ls
+v kitty.conf
+ls
+rm -rf bg-blurred-darker.png bg-blurred.png change-profile.sh cyberdream-transparent.conf cyberdream.conf kitty-coding.conf kitty-screencasting.conf oxocarbon.conf toggle-transparency.sh tokyonight_day.conf tokyonight_moon.conf tokyonight_night.conf tokyonight_storm.conf
+ls
+v current-theme.conf
+rm -rf catppuccin-theme.conf
+ls
+v kitty.conf.bak
+rm -rf kitty.conf.bak
+ls
+cd
+ls
+cd nu_scripts/
+ls
+cd sourced/
+ls
+v todo.nu
+cd github/
+ls
+..
+ls
+cd progress_bar/
+ls
+v bar.nu
+..
+ls
+v update-path.nu
+v update_hosts.nu
+ls
+cd webscraping/
+ls
+v twitter.nu
+v shell_stars.nu
+cd
+cd -
+v anagram_unscramble_scrape.nu
+cd
+todoshow
+todoadd "Web Dev" "Learn"
+todoadd "Bash" "Learn"
+man zathura
+man zathura | highlight
+clear
+tmux ls
+clear
+cd Downloads/
+ls
+z Web-Development-with-Node-and-Express_-2nd-Edition.pdf
+zathura Web-Development-with-Node-and-Express_-2nd-Edition.pdf
+clear
+cd
+aplay -l
+clear
+ls
+cd vaults/
+ls
+cd personal/
+ls
+cd Notes/
+ls
+v nvim-surround.md
+cd
+ls
+cd dotfiles/
+gsb
+cd
+cd MyProjects/
+ls
+cd YoutubeDownloader/
+gsb
+lazygit
+clear
+cd
+pydownload
+cat /etc/os-release<\n>
+cd YoutubeDownloader/
+v pyplayer.py
+ls
+..
+ls
+clear
+which pacman
+which apt
+v pyplayer.py
+cd .local/
+cd bin
+exit
+source ~/.config/nushell/config.nu
+clear
+cd .local/
+ls
+cd bin/
+ls
+v VideoDownloader.sh
+cd
+clear
+ls
+clear
+cd dotfiles/
+clear
+ls
+clear
+cd
+cd .config
+cd nushell/
+ls
+v config.nu
+cd
+cd kitty/
+source ~/.config/nushell/config.nu
+clear
+exit
+clear
+cd kitty/
+cd nushell/
+source ~/.config/nushell/env.nu
+source ~/.config/nushell/config.nu
+clear
+cd nushell/
+cd .config
+cd nushell/
+cd
+cd nushell/
+clear
+cd .config
+cd nushell/
+ls
+v config.nu
+todoshow
+cd
+source ~/.config/nushell/config.nu
+exit
+clear
+cd nushell/
+clear
+cd .config
+cd nushell/
+ls
+v config.nu
+ls
+v env.nu
+source ~/.config/nushell/env.nu
+clear
+cd
+cd .config
+cd nushell/
+cd
+cd nushell/
+z nushell
+z dotfiles
+clear
+cd
+cd .config
+cd nushell/
+ls
+v config.nu
+source ~/.config/nushell/env.nu
+source ~/.config/nushell/config.nu
+clear
+exit
+source ~/.config/nushell/config.nu
+clear
+cd nushell/
+cd MyProjects/
+ls
+cd EgerSaleClient/
+ls
+v .
+clear
+exit
+clear
+cd nushell/
+cd MyProjects/
+ls
+cd EdumeetClient/
+ls
+v .
+..
+exit
+clear
+cd MyProjects/
+ls
+cd EgerSaleClient/
+ls
+exit
+clear
+npm run dev
+clear
+cd nvim
+clear
+ls
+cd lua
+ls
+cd configs/
+ls
+v todo-comments.lua
+..
+ls
+v mappings.lua
+cd
+cd .config
+ls
+cd yazi
+ls
+v keymap.toml
+v theme.toml
+yazi
+v .
+ls
+..
+ls
+cd studyplannerclient/
+ls
+exi
+exit
+clear
+npm run dev
+v .
+clear
+tmux ls
+clear
+cd .config
+cd nushell/
+ls
+v config.nu
+todoshow
+clear
+cd
+clear
+brain
+l
+ls
+cd vaults/
+ls
+cd personal/
+ls
+cd Notes/
+ls
+v testing.md
+v nvim-surround.md
+config nu
+moveNotes
+ls
+..
+cd CodesNotes/
+ls
+sortNotes
+ls
+cd Bash/
+ls
+v testing.md
+..
+ls
+cd
+ls
+clear
+cd .config
+cd nushell/
+ls
+v config.nu
+cd
+clear
+cd /
+ls
+cd tmp
+ls
+..
+ls
+cd nix
+ls
+..
+ls
+cd usr
+ll
+clear
+cd .config
+cd nushell/
+ls
+v config.nu
+v env.nu
+cd
+ls
+cd vaults/
+ls
+cd personal/
+ls
+cd Notes/
+ls
+..
+cd CodesNotes/
+ls
+cd Bash/
+ls
+rm -rf testing.md
+ls
+..
+ls
+cd Vim/
+ls
+v SUMMARY.md
+..
+ls
+cd Linux/
+ls
+v AddUser.md
+man useradd
+ls
+cd
+todoshow
+cd MyProjects/
+ls
+cd ToDoCli/
+ls
+v todocli.py
+ls
+..
+ls
+cd studyplannerclient/
+ls
+v .
+clear
+cd .config
+cd nushell/
+ls
+cd config.nu
+v config.nu
+source ~/.config/nushell/config.nu
+exit
+clear
+lt
+clear
+cd
+cd dotfiles/
+ls
+lazygit
+..
+ls
+cd vaults/
+cd personal/
+ls
+cd Notes/
+ls
+..
+cd CodesNotes/
+ls
+cd Vim/
+ls
+cd Part-05-Search-and-Replace/
+ls
+v searchandreplace.md
+..
+ls
+todoshow
+cd
+cd kitty/
+cd .config
+cd kitty/
+ls
+v kitty.conf
+..
+cd yazi/
+ls
+..
+cd yay
+cd
+cd .config
+cd yay/
+ls
+..
+cd
+cd /
+cd usr
+ls
+cd share
+ls
+btop
+cd
+cd .config
+ls
+cd ranger/
+ls
+v rc.conf
+ls
+v scope.sh
+ls
+v rifle.conf
+..
+ls
+cd zsh/
+ls
+cd
+clear
+cd .config
+cd nushell/
+ls
+v config.nu
+source ~/.config/nushell/config.nu
+exit
+v config.nu
+source ~/.config/nushell/config.nu
+exit
+v .zshrc
+clear
+ls
+fetch
+sysinfo
+v config.nu
+source ~/.config/nushell/config.nu
+exit
+sysinfo
+clear
+cd MyProjects/
+ls
+cd YoutubeDownloader/
+ls
+v pyplayer.py
+v requirements.txt
+ls
+cd2
+ls
+cd dotfiles/
+gsb
+..
+ls
+cd MyProjects/
+ls
+cd Portfolio/
+gsb
+ls
+v .
+..
+cd PortfolioProject/
+v .
+v .env
+..
+cd Portfolio/
+v .
+..
+cd PortfolioProject/
+ls
+v .env
+..
+cd Portfolio/
+v .
+gsb
+v .
+..
+ls
+cd EgerSaleClient/
+gsb
+v .
+..
+ls
+cd ToDoCli/
+ls
+gsb
+..
+cd YoutubeDownloader/
+ls
+rename "The intro to Docker I wish I had when I started.f401.mp4.part" "Docker Intro.mp4"
+ls
+mv "The intro to Docker I wish I had when I started.f401.mp4.part" "Docker Intro.mp4"
+ls
+mpv "Docker Intro.mp4"
+ls
+rm -rf `Docker Intro.mp4`
+ls
+v pyplayer.py
+clear
+ls
+v pyplayer.py
+ls
+clear
+v pyplayer.py
+ls
+v README.md
+gsb
+..
+ls
+clear
+ls
+cd YoutubeDownloader/
+v pyplayer.py
+btop
+ls
+v pyplayer.py
+clear
+ls
+v pyplayer.py
+ls
+v README.md
+..
+ls
+cd flask-shop/
+gsb
+ls
+v app.py
+..
+ls
+cd ToDoCli/
+ls
+v todocli.py
+clear
+ls
+open todo.db
+open todo.db | where id == 1
+open todo.db | get task
+open todo.db | get todos | where id == 1
+open todo.db | get todos | where # == 1
+open todo.db | get todos | where task == "Bash"
+clear
+ls
+v database.py
+ls
+..
+cd nvim
+clear
+ls
+cd lua
+ls
+cd plugins/
+ls
+v init.lua
+cd dotfiles/
+gsb
+..
+cd
+ls
+cd .config
+ls
+v starship.toml
+ls
+cd zathura/
+ls
+v zathurarc
+cd
+pydownload
+cd MyProjects/
+ls
+cd YoutubeDownloader/
+ls
+gsb
+v pyplayer.py
+exit
+exit
+cd MyProjects/
+cd YoutubeDownloader/
+v pyplayer.py
+pydownload
+v pyplayer.py
+pydownload
+l
+ls
+mpv "Can You Do Advent of Code With Only Vim Macros!？.f137.mp4"
+rm -rf `Can You Do Advent of Code With Only Vim Macros!？.f137.mp4` `Can You Do Advent of Code With Only Vim Macros!？.f251.webm.part`
+ls
+gsb
+v README.md
+ls
+v pyplayer.py
+cd
+cd dotfiles/
+gsb
+lazygit
+cd
+pydownload
+clear
+ls
+clear
+ls
+cd MyProjects/
+ls
+cd YoutubeDownloader/
+ls
+v pyplayer.py
+clear
+which pacman
+v pyplayer.py
+pydownload
+ls
+pydownload
+ls
+pydownload
+v pyplayer.py
+ls
+open video_cache.json
+ls
+gsb
+v pyplayer.py
+pydownload
+v pyplayer.py
+pydownload
+v pyplayer.py
+pydownload
+v pyplayer.py
+pydownload
+v pyplayer.py
+pydownload
+v pyplayer.py
+pydownload
+v pyplayer.py
+pydownload
+v pyplayer.py
+pydownload
+v pyplayer.py
+pydownload
+v pyplayer.py
+pydownload
+v pyplayer.py
+pydownload
+v pyplayer.py
+pydownload
+ls
+v pyplayer.py
+pydownload
+v pyplayer.py
+pydownload
+ls
+clear
+cd MyProjects/
+ls
+cd YoutubeDownloader/
+clear
+gsb
+v pyplayer.py
+gsb
+ls *.mp4 | get name | each { |it| mv $it ~/Videos/ }
+ls *.webm | get name | each { |it| mv $it ~/Videos/ }
+ls
+open video_cache.json
+ls
+rm -rf video_cache.json `Installing Arch Linux in 2024.f398.mp4.part`
+ls
+clear
+ls
+gsb
+v pyplayer.py
+tmux ls
+ls
+v pyplayer.py
+v requirements.txt
+ls
+cd assets/
+ls
+cd
+ls
+cd dotfiles/
+ls
+gsb
+cd
+sysinfo
+clear
+ls
+cd MyProjects/
+ls
+cd YoutubeDownloader/
+ls
+v pyplayer.py
+ls
+open README.md | highlight
+ls
+ll
+ls
+man grp
+cd /etc
+ls
+cat passwd
+ls
+cat vimrc
+clear
+cd
+cd ranger
+ls
+v rc.conf
+v scope.sh
+v rifle.conf
+$env.EDITOR
+v rifle.conf
+$env.VISUAL
+ls
+..
+ls
+cd zathura/
+ls
+cd
+ls
+cd Top-5-Bootloader-Themes/
+ls
+cd tests/
+ls
+v test_install.sh
+ls
+..
+ls
+..
+ls
+cd vaults/
+ls
+cd personal/
+ls
+cd CodesNotes/
+ls
+cd Vim/
+ls
+v SUMMARY.md
+clear
+cd .local/
+ls
+cd bin
+ls
+rm -rf httpx markdown-it mov-cli mov-cli-dev normalizer pygmentize pytubefix spotifycli unidecode
+ls
+rm -rf typer
+ls
+v generateRequirements.py
+ls
+ll
+cd
+ls
+cd MyProjects/
+ls
+cd YoutubeDownloader/
+ls
+v pyplayer.py
+gsb
+ls
+cd
+ls
+cd vaults/
+ls
+cd personal/
+ls
+cd CodesNotes/
+ls
+cd Bash/
+ls
+..
+ls
+cd Linux/
+ls
+v ScriptOnStartup.md
+ls
+v AddUser.md
+cd2
+ls
+cd2
+cd .config
+ls
+v starship.toml
+cd nushell/
+ls
+clear
+cd .local/
+cd bin
+v VideoDownloader.sh
+ls
+v sysfetch
+v config.nu
+ls
+v env.nu
+cd
+cd MyProjects/
+ls
+cd studyplannerclient/
+gsb
+cd
+ls
+cd dotfiles/
+gsb
+..
+clear
+cd nushell
+ls
+v config.nu
+clear
+ls
+cdi
+cd -
+v config.nu
+v env.nu
+cd
+v .zoxide.nu
+cd .config/
+ls
+cd tealdeer/
+ls
+v config.toml
+..
+ls
+cd zathura/
+ls
+v zathurarc
+..
+ls
+cd smassh/
+ls
+v smassh.json
+open smassh.json
+smassh
+clear
+ls
+cd
+v .
+gsb
+..
+ls
+cd Portfolio/
+gsb
+cd personal/
+ls
+cd Vim/
+ls
+cd Part-10-Advanced-Editing/
+ls
+v advancedediting.md
+ls
+..
+ls
+v NewLineVim.md
+ls
+clear
+ls
+cd .config/
+cd nushell/
+ls
+v config.nu
+lt
+clear
+ls
+cd nupm
+ls
+cd modules/
+ls
+cd nu-themes/
+ls
+v gruvbox-dark-hard.nu
+..
+ls
+cd nupm/
+ls
+cd utils/
+ls
+cd2
+ls
+..
+v config.nu
+source ~/.config/nushell/config.nu
+clear
+v config.nu
+source ~/.config/nushell/config.nu
+clear
+clear
+cd
+clear
+source ~/.config/nushell/config.nu
+clear
+cd nu_scripts/
+cd themes/
+ls
+cd nu-themes/
+ls
+v ayu.nu
+source ~/.config/nushell/config.nu
+exit
+exit
+exit
+clear
+ls
+clear
+ls
+cd .config/
+cd nushell/
+ls
+v config.nu
+todoshow
+ls
+v config.nu
+cd nvim
+ls
+v init.lua
+clear
+ls
+cd nushell/
+v config.nu
+..
+v config.nu
+source ~/.config/nushell/config.nu
+ls
+clear
+cd
+cd nu_
+ls
+cd themes/
+ls
+cd nu-themes/
+v catppuccin-mocha.nu
+source ~/.config/nushell/config.nu
+exit
+exit
+exit
+clear
+ls
+clear
+cd .config/
+ls
+cd nushell/
+ls
+v config.nu
+todoshow
+cd
+cd MyProjects/
+ls
+cd ToDoCli/
+ls
+v todocli.py
+cd
+cd /
+ls
+cd run
+ls
+yazi
+ls
+..
+ls
+cd
+clear
+ls
+cd MyProjects/
+ls
+cd YoutubeDownloader/
+gsb
+ls
+clear
+ls
+clear
+cd .config/
+ls
+cd nushell/
+ls
+v config.nu
+ls
+v env.nu
+ls
+cd MyProjects/
+ls
+v requirements.txt
+ls
+..
+ls
+cd ToDoCli/
+ls
+v todocli.py
+todoshow
+todocomplete 1
+ls
+open todo.db
+ls
+..
+ls
+cd Portfolio/
+gsb
+v pyplayer.py
+v .
+gsb
+..
+ls
+cd CGradingSystem/
+gsb
+ls
+v main.c
+..
+ls
+cd Systems/
+ls
+cd HospitalSystemClient/
+gsb
+ls
+..
+c
+cd
+cd nushell/
+ls
+cd
+cd nvim
+ls
+v init.lua
+cd lua
+ls
+v mappings.lua
+ls
+cd configs
+ls
+v wilder.lua
+ls
+v zenmode.lua
+ls
+v todo-comments.lua
+ls
+v smoothcursor.lua
+ls
+v conform.lua
+ls
+cd
+cd dotfiles/
+ls
+gsb
+ls
+..
+ls
+cd vaults/
+cd personal/
+ls
+cd CodesNotes/
+ls
+cd Vim
+ls
+v SUMMARY.md
+ls
+v nvim-surround.md
+ls
+cd Part-04-Registers-and-Macros/
+ls
+v registersandmacros.md
+ls
+..
+ls
+cd Part-07-Git-and-VIM/
+ls
+v gitandvim.md
+ls
+..
+ls
+..
+ls
+cd Arch/
+ls
+v pacman.md
+ls
+cd dotfiles/
+gsb
+..
+ls
+cd nvim
+gsb
+ls
+v init.lua
+ls
+cd lua
+ls
+v mappings.lua
+ls
+v options.lua
+ls
+v chadrc.lua
+ls
+cd plugins/
+ls
+v init.lua
+ls
+v pyplayer.py
+todoshow
+todoadd "Learn C++" "Learn"
+todoadd "Learn SQL" "Learn"
+todocomplete 2
+todoshow
+todocomplete 3
+ls
+ls
+..
+ls
+cd configs/
+ls
+v lspconfig.lua
+ls
+v zenmode.lua
+ls
+v lazy.lua
+ls
+cd dotfiles
+gsb
+cd nushell
+ls
+v config.nu
+fzf
+fzf | v
+ls
+fzf | xargs nvim
+v pyplayer.py
+todoshow
+clear
+ls
+man c++
+man cpp
+ls
+cd
+cd bin
+ls
+v tn.sh
+ls
+v brain.sh
+v batteryInfo.sh
+ls
+v sortNotesByTags.sh
+v moveObsidianNotes.sh
+clear
+cd nushell
+ls
+v config.nu
+cd
+todoshow
+cd MyProjects/
+ls
+..
+ls
+cd MyLearning/
+ls
+cd LearnCpp/
+ls
+clear
+clear
+ls
+ls *.cpp | entr gcc main.cpp -o main.o && ./main.o
+ls *.cpp | entr gcc main.cpp -o main.o and ./main.o
+ls
+cd MyLearning/
+cd LearnCpp/
+ls *.cpp | entr gcc main.cpp -o main.o and ./main.o
+ls
+ls *.cpp | entr gcc main.cpp
+echo main.cpp | entr gcc main.cpp
+echo main.cpp | entr gcc main.cpp and ./main.o
+ls
+echo main.cpp | entr gcc main.cpp and ./main.o
+echo main.cpp | entr g++ main.cpp and ./main.o
+echo main.cpp | entr g++ main.cpp; ./main.o
+clear
+cd MyLearning/
+cd LearnCpp/
+clear
+./main.o
+while ./main.o
+clear
+echo main.cpp | entr g++ main.cpp
+echo main.o | entr ./main.o
+echo main.cpp | entr g++ main.cpp -o main.o
+echo main.cpp | entr g++ main.cpp -o main.o and ./main.o
+echo main.cpp | entr g++ main.cpp -o main.o && ./main.o
+echo main.cpp | entr g++ main.cpp -o main.o; ./main.o
+echo main.cpp | entr g++ main.cpp -o main.o
+echo main.cpp | entr g++ main.cpp -o main.o and echo main.o | entr ./main.o
+echo main.cpp | entr g++ main.cpp -o main.o | echo main.o | entr ./main.o
+echo main.cpp | entr g++ main.cpp -o main.o | entr ./main.o
+echo main.cpp | entr g++ main.cpp -o main.o | echo main.o | entr ./main.o
+echo main.cpp | entr g++ main.cpp -o main.o | ls main.o | entr ./main.o
+echo main.cpp | entr g++ main.cpp -o main.o | ls *.o | entr ./main.o
+clear
+echo main.cpp | entr g++ main.cpp -o main.o | echo main.o | entr ./main.o
+./main.o
+clear
+cd bspwm/
+ls
+..
+ls
+cd src
+ls
+cd config/
+ls
+v sxhkdrc
+ls
+v dunstrc
+clear
+ls
+cd
+cd dotfiles
+gsb
+cd
+cd nushell
+ls
+v env.nu
+v config.nu
+open history.txt | wc -l
+cd
+cd .config/
+ls
+cd tmux
+gsb
+ls
+v tmux.conf
+ls
+cd
+ls
+cd CodesNotes/
+ls
+v NewLineVim.md
+ls
+v SUMMARY.md
+$env.XDG_CURRENT_DESKTOP
+ls
+v nvim-surround.md
+ls
+v NewLineVim.md
+ls
+cd Part-09-Workflows-and-Best-Practices/
+ls
+v workflows.md
+cd nvim
+ls
+cd lua
+ls
+cd plugins/
+ls
+v init.lua
+cd
+brain
+ls
+cd Notes/
+..
+cd Notes/
+ls
+v testing.md
+rm -rf testing.md
+cd2
+ls
+cd Templates/
+ls
+v DefaultTemplate.md
+cd nvim
+cd lua
+cd plugins/
+v init.lua
+brain
+cd Notes/
+cd2
+cd Notes/
+ls
+v testing.md
+rm -rf testing.md
+ls
+..
+ls
+cd CodesNotes/
+ls
+cd Arch/
+ls
+v pacman.md
+ls
+sysinfo
+clear
+ls
+v pacman.md
+./main.o
+echo main.cpp | entr g++ main.cpp -o main.o
+cd bin
+v VideoDownloader.sh
+cd MyProjects/
+ls
+cat package.json
+open package.json
+open package.json | get scripts
+v main.cpp
+ls
+rm -rf a.out
+ls
+clear
+ls
+clear
+cd MyProjects/
+ls
+clear
+ls
+cd Portfolio/
+ls
+v .
+clear
+ls
+clear
+gsb
+..
+git clone git@github.com:thepinakle/deoxfrontend.git
+cd deoxfrontend/
+ls
+cd client/
+ls
+npm i
+v .
+..
+ls
+..
+clear
+..
+git clone https://github.com/exoad/books.git
+git clone git@github.com:exoad/books.git
+cd books
+ls
+..
+cd dotfiles
+gsb
+ls
+./
+..
+clear
+cd nushell
+ls
+v config.nu
+ls
+cd
+ls
+keybindings list
+cd nushell
+v config.nu
+source ~/.config/nushell/config.nu
+exit
+exit
+clear
+ls
+cd nushell
+v config.nu
+source ~/.config/nushell/config.nu
+exit
+exit
+clear
+cd nushell
+v config.nu
+keybindings list | where type == events
+v config.nu
+source ~/.config/nushell/config.nu
+exit
+exit
+clear
+tmux ls
+keybindings listen
+clear
+cd nushell
+v config.nu
+config reload
+source ~/.config/nushell/config.nu
+exit
+exit
+source ~/.config/nushell/config.nu
+cd nushell
+clear
+keybindings
+keybindings default
+ls
+cd .config/
+cd mpv/
+ls
+locate mpv.conf
+open /usr/share/doc/mpv/
+open /usr/share/doc/mpv/mpv.conf
+touch mpv.conf
+v mpv.conf
+cd
+lspci | grep -i vga<\n>
+sudo pacman -S mesa libva-intel-driver libva-utils
+v config.nu
+sudo pacman -Syu
+yay -Rns python313
+python --version
+sudo pacman -S mesa libva-intel-driver libva-utils
+pydownload
+sudo pacman -Sc
+python --version
+clear
+ls
+ls *.mp4 | get name | each { |it| mv $it ~/Videos/ }
+ls *.webm | get name | each { |it| mv $it ~/Videos/ }
+ls
+rm -rf video_cache.json
+ls
+cd MyProjects/
+ls
+cd YoutubeDownloader/
+ls
+v pyplayer.py
+ls
+v requirements.txt
+todoshow
+cd nushell
+ls
+v config.nu
+ls
+v env.nu
+ls
+..
+ls
+v zathura
+cd zathura/
+ls
+v zathurarc
+ls
+..
+ls
+cd mpv
+ls
+v mpv.conf
+ls
+cd
+cd MyProjects/
+ls
+cd studyplannerclient/
+ls
+gsb
+v .
+python --version
+cd nushell
+ls
+v config.nu
+clear
+ls
+v config.nu
+ls
+v env.nu
+cd dotfiles
+ls
+open README.md | highlight
+cd
+cd MyLearning/
+ls
+cd LearnPython/
+ls
+clear
+cd MyLearning/
+cd LearnPython/
+ls
+python main.py
+v main.py
+ls
+..
+ls
+cd LearnCpp/
+ls
+v main.cpp
+cd
+cd MyProjects/
+ls
+cd YoutubeDownloader/
+ls
+v pyplayer.py
+ls
+v requirements.txt
+ls
+..
+ls
+cd studyplannerclient/
+gsb
+v .
+ls
+gsb
+..
+ls
+cd YoutubeDownloader/
+ls
+v pyplayer.py
+todoshow
+todocomplete 3
+todocomplete 1
+tododelete 1
+clear
+ls
+todoadd "Learn python" "Learn"
+todoadd "Learn C++" "Learn"
+cd
+cd MyLearning/
+ls
+cd LearnCpp/
+ls
+clear
+ls
+cd personal/
+ls
+..
+ls
+..
+ls
+cd personal
+ls
+cd Notes/
+ls
+..
+ls
+cd
+cd MyProjects/
+ls
+cd Portfolio/
+which ls
+gsb
+v .
+ls
+..
+ls
+cd dotfiles
+ls
+cd .config/
+..
+cd .config/
+ls
+cd MyProjects/
+cd Portfolio/
+npm run dev
+v .
+ls
+..
+ls
+cd EgerSaleClient/
+ls
+..
+cd EgerSaleClient/
+npm run dev
+v .
+ls
+..
+ls
+cd Systems/
+ls
+v main.cpp
+cd MyProjects/
+..
+cd Systems/
+ls
+cd HospitalSystemServer/
+ls
+cd app
+ls
+..
+ls
+python run.py
+cd .venv/
+ls
+..
+source .venv/bin/activate
+v HospitalSystemClient/
+ls
+cd HospitalSystemClient/
+npm run dev
+clear
+ls
+..
+ls
+clear
+ls
+clear
+cd MyProjects/
+ls
+cd EdumeetClient/
+ls
+v .
+clear
+ls
+cd
+ls
+todoshow
+man cc
+cc --help
+ls
+cd vaults/
+ls
+cd personal
+ls
+cd CodesNotes/
+ls
+cd Arch
+ls
+v pacman.md
+which cd
+which v
+sensors
+ls
+..
+ls
+cd Linux
+ls
+v AddUser.md
+v Rename.md
+free
+free -m
+ls
+v xdgOpenCommand.md
+ls
+locate cron
+v ScriptOnStartup.md
+ls
+..
+ls
+cd Vim/
+ls
+clear
+ls
+cd nushell
+ls
+v config.nu
+cd dotfiles
+ls
+..
+cd .config/
+ls
+cd mpd
+ls
+v mpd.conf
+v log
+cd nvim
+cd lua
+ls
+v mappings.lua
+cd plugins/
+v init.lua
+ls
+..
+ls
+v options.lua
+v nvim-surround.md
+ls
+v SUMMARY.md
+ls
+v NewLineVim.md
+cd
+cd tmux
+l
+ls
+v tmux.conf
+cd tmux
+v tmux.conf
+ls
+cd plugins/
+ls
+..
+cd -
+..
+cd
+cd tmux
+s
+ls
+v tmux.conf
+cd
+cd MyProjects/
+ls
+cd deoxfrontend/
+ls
+cd client/
+git pull
+v .
+clear
+cd tmux
+v tmux.conf
+tmux show-options -g -s set-clipboard<\n>set-clipboard on
+tmux show-options -g -s set-clipboard
+v tmux.conf
+ls
+cd plugins/
+ls
+..
+cd
+cd tmux
+ls
+v tmux.conf
+cd dotfiles
+gsb
+lazygit
+cd -
+time todoshow
+yay time
+time todoshow
+ls
+ls
+cd
+cd dotfiles
+gsb
+sysinfo
+overlay list
+cd MyProjects/
+..
+cd Systems/
+ls
+cd HospitalSystemServer/
+ls
+cd .venv/
+ls
+cd bin/
+ls
+..
+rm -rf .venv/
+python -m venv .venv
+cd .venv/
+ls
+cd bin/
+ls
+..
+ls
+source .venv/bin/activate
+pipx install virtualenv
+rn -rf .venv/
+rm -rf .venv/
+virtualenv .venv
+source .venv/bin/activate.nu
+v .venv/bin/activate.nu
+source .venv/bin/activate.nu
+v .venv/bin/activate.nu
+source .venv/bin/activate.nu
+overlay list
+.venv/bin/activate.nu
+source .venv/bin/activate.nu
+v .venv/bin/activate.nu
+source .venv/bin/activate.nu
+v .venv/bin/activate.nu
+source .venv/bin/activate.nu
+overlay list
+exit
+clear
+cd MyProjects/
+cd Systems/
+cd HospitalSystemServer/
+source .venv/bin/activate.nu
+pip install -r requirements.txt
+python run.py
+deactivate
+exit
+v tmux.conf
+clear
+cd MyProjects/
+npm init electron-app my-idm<\n>cd my-idm<\n>npm install<\n>
+clear
+ls
+v tmux.conf
+cd
+npm init electron-app my-idm<\n>cd my-idm<\n>npm install<\n>
+ls
+cd src
+ls
+v ,
+v .
+cd2
+npm create-electron-app
+ls
+cd my-idm/
+ls
+npm install react react-dom tailwindcss postcss autoprefixer<\n>
+cd src/
+ls
+v .
+npx tailwindcss init<\n>
+ls
+..
+ls
+cd src/
+rn -rf tailwind.config.js
+,,
+rm -rf tailwind.config.js
+..
+npx tailwindcss init<\n>
+ls
+cd src/
+ls
+..
+touch index.html
+v index.html
+cd src/
+v .
+..
+v package.json
+npm start
+v package.json
+npm start
+v package.json
+pydownload
+npm start
+cd src/
+v .
+..
+npm start
+ls
+v .
+npm start
+v .
+npm start
+pydownload
+pydownload neovim
+pydownload
+ls
+ls *.webm and *.mkv | get name | each { |it| mv $it ~/Videos/ }
+ls *.webm or *.mkv | get name | each { |it| mv $it ~/Videos/ }
+ls *.webm, *.mkv | get name | each { |it| mv $it ~/Videos/ }
+ls [*.webm, *.mkv] | get name | each { |it| mv $it ~/Videos/ }
+ls *.webm | get name | each { |it| mv $it ~/Videos/ }
+ls *.mkv | get name | each { |it| mv $it ~/Videos/ }
+ls
+python --version
+v .
+cd tmux
+ls
+v tmux.conf
+pwd
+ls
+ls
+..
+ls
+cd YoutubeDownloader/
+gsb
+v pyplayer.py
+open video_cache.json
+ls
+open README.md | highlight
+open README.md
+open README.md | bat
+ls
+open video_cache.json
+..
+ls
+cd Portfolio/
+gsb
+v
+sysinfo
+gsb
+....
+cd
+ls
+cd vaults/
+cd personal/
+ls
+cd CodesNotes/
+ls
+cd Vim/
+ls
+v NewLineVim.md
+ls
+v nvim-surround.md
+v tmux.conf
+cd
+cd MyProjects/
+ls
+cd Systems/
+ls
+cd HospitalSystemClient/
+cd HospitalSystemServer/
+..
+source .venv/bin/activate.nu
+python run.py
+cd MyProjects/
+cd EdumeetServer/
+ls
+v .
+v .
+python run.py
+v .
+python run.py
+v .
+ls
+npm run dev
+clear
+cd
+ls
+clear
+ls
+ll
+v .gitconfig
+clear
+ls
+cd MyProjects/
+ls
+cd studyplannerclient/
+gsb
+v .
+ls
+cd .config/
+cd nushell
+ls
+clear
+ls
+cd personal/
+ls
+cd Bash/
+ls
+v Loops.md
+v config.nu
+clear
+ls
+cd nushell
+ls
+v config.nu
+clear
+cd nvim
+ls
+cd lua
+ls
+v mappings.lua
+ls
+v options.lua
+ls
+cd plugins/
+ls
+v init.lua
+ls
+v init.lua
+ls
+..
+ls
+cd configs/
+ls
+v zenmode.lua
+ls
+v wilder.lua
+ls
+v todo-comments.lua
+clear
+cd nsuhell
+cd nushell
+ls
+todoshow
+v config.nu
+cd deoxfrontend/
+git pull
+..
+cd
+ls
+cd dotfiles
+gsb
+ps aux
+ps | where cpu > 5
+cd dotfiles
+mv ~/.config/nvim/ nvim/.config/nvim
+stow nvim 
+ls
+v README.md 
+ls
+clear
+cd dotfiles
+ls
+cd
+cd .config/
+ls
+cd .config/
+ls
+clear
+cd hypr/
+ls
+cd conf/
+ls
+cd windowrules/
+ls
+v default.conf 
+ls
+..
+ks
+ls
+cd window.conf
+ls
+v windowrule.conf 
+cd windowrules/
+v default.conf 
+cd
+cd dotfiles
+ls
+clear
+ls
+cd .config/
+cd bspwm/
+ls
+v bspwmrc 
+..
+cd vim/
+ls
+ll
+v .vimrc 
+....
+cd
+clear
+ls
+clear
+ls
+ls
+cd .config/
+cd ghostty/
+ls
+v config 
+ls
+cd
+clear
+ls
+cd nushell
+ls
+v config.nu 
+touch custom-config.env
+mv custom-config.env custom-config.nu
+ls
+v custom-config.nu 
+v config.nu 
+source config.nu
+v config.nu 
+source config.nu
+v config.nu 
+source config.nu
+v config.nu 
+source config.nu
+clear
+ls
+v custom-config.nu 
+v config.nu 
+v custom-config.nu 
+source config.nu
+clear
+cd
+cd nvim
+ls
+v init.lua 
+ls
+cd lua
+ls
+v mappings.lua 
+cd
+cd dotfiles/
+ls
+cd
+cd hypr/
+ls
+.
+..
+ls
+cd conf/
+ls
+cd windowrules/
+v default.conf 
+..
+ls
+v ml4w.conf 
+..
+ls
+cd scripts/
+ls
+..
+cd ml4w/
+ls
+cd scripts/
+ls
+v sddm-wallpaper.sh 
+./sddm-wallpaper.sh
+clear
+cd /etc/sddm.conf.d/
+ls
+v theme.conf.user 
+v sddm.conf 
+ls
+rm theme.conf.user
+sudo rm theme.conf.user
+ls
+clear
+cd ml4w/
+l
+ls
+v shell.sh 
+v updates.sh 
+v ag
+v ags.sh 
+cd arch/
+ls
+v lid-improvements.sh 
+v snapshot.sh 
+v cleanup.sh 
+cd
+cleanup.sh
+cd -
+ls
+./cleanup.sh
+ls
+..
+cd settings/
+ls
+v terminal.sh 
+v networkmanager.sh 
+nmtui
+v terminal.sh 
+cleanup.sh
+clear
+cd hypr/
+ls
+v cleanup.sh 
+..
+ls
+cd conf/
+l
+cd keybindings/
+v default.conf 
+ls
+v fr.conf 
+ls
+cd
+clear
+ls
+cd dotfiles/
+ls
+v README.md 
+ls
+clear
+ls
+clear
+ls
+cd nvim
+ls
+cd .config/
+ls
+cd nvim
+ls
+v README.md 
+cd
+cd .config/
+cd ghostty/
+ls
+v config 
+ls
+cd nushell
+ls
+v custom-config.nu 
+v config.nu 
+ls
+cd
+ls
+cd personal/
+ls
+cd Python/
+ls
+v mutation.md 
+ls
+v pykeywords.md 
+ls
+..
+ls
+cd Projects/
+ls
+v compiler.md 
+ls
+..
+ls
+cd Arch/
+ls
+v pacman.md 
+pacman -Si nvim
+pacman -Si neovim
+wikiman display server
+wikiman
+clear
+ls
+..
+ls
+cd Database/
+ls
+v MySqlUserCreation.md 
+ls
+cd
+ls
+cd dotfiles//
+ls
+lt
+cd nvim
+ls
+cd .config/
+lt
+clear
+ls
+clear
+ls
+cd dotfiles/
+ls
+open README.md | bat
+cd
+cd nushell
+ls
+v custom-config.nu 
+todoshow
+todoadd "Add audio download in PyDown" "code"
+cd YoutubeDownloader/
+..
+ls
+v pyplayer.py 
+clear
+ls
+clear
+ls
+cd dotfiles/
+ls
+clear
+ls
+cd
+cd nvim
+ls
+cd lua
+ls
+v mappings.lua 
+cd plugins/
+ls
+v init.lua 
+cd
+cd MyLearning/
+ls
+cd LearnPython/
+ls
+v main.py 
+ls
+clear
+python main.py 
+clear
+ls
+cd MyLearning/
+ls
+cd LearnPython/
+ls
+clear
+python main.py 
+exit
+v main.py 
+ls
+cd
+cd MyProjects/
+ls
+cd YoutubeDownloader/
+ls
+v pyplayer.py 
+cd bin
+ls
+v VideoDownloader.sh 
+cd -
+ls
+v pyplayer.py 
+ls
+v requirements.txt 
+ls
+v pyplayer.py 
+cd
+cd .config/
+cd ml4w/
+ls
+cd scripts/
+ls
+v sddm-wallpaper.sh 
+v ml4w-autostart.sh 
+ls
+v thunarterminal.sh 
+v updates.sh 
+ls
+clear
+v nm-applet.sh 
+man nm-applet
+v nm-applet.sh 
+clear
+ls
+v ags.sh 
+..
+cd ags/
+ls
+v app.ts 
+cd scripts/
+ls
+v run_themeswitcher.sh 
+..
+ls
+v env.d.ts 
+cd
+cd dotfiles/
+cd ghostty/
+ls
+cd .config/
+ls
+cd ghostty/
+ls
+v ghostty.conf 
+cd themes/
+ls
+v pywal_ghostty.conf 
+..
+ls
+v config 
+clear
+ls
+cd ghostty/
+ls
+cd ghostty/
+ls
+v ghostty.conf 
+v config 
+cd
+clear
+ls
+clear
+exit
+ts
+cd .config/
+cd tmux/
+ls
+v tmux.conf 
+cd plugins/
+ls
+..
+cd
+clear
+exit
+cd tmux/
+..
+ls
+v tmux.conf 
+cd
+cd .config/
+cd tmux/
+ls
+v tmux.conf 
+exit
+ts
+ls
+clear
+ls
+clear
+cd ghostty/
+ls
+cd ghostty/
+ls
+v config 
+clear
+cd ghostty/
+ls
+cd ghostty/
+v config 
+ls
+clear
+ls
+cd dotfiles/
+ls

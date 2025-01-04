@@ -1,0 +1,35 @@
+# Theme settings
+# theme = dark:vesper,light:catppuccin-latte
+# theme = dark:catppuccin-mocha,light:catppuccin-latte
+# background = #1c2021
+# background = #0B1215
+background-opacity = 0.60
+background-blur-radius = 20
+bold-is-bright = true
+
+# window settings
+macos-titlebar-style = hidden
+window-decoration = false
+window-theme = auto
+window-padding-color = background
+window-padding-x = 10
+window-padding-y = 10
+window-padding-balance = false
+window-colorspace = "display-p3"
+adjust-cell-height = 10%
+
+shell-integration-features = no-cursor,sudo
+confirm-close-surface = false
+
+# Font settings
+font-family = "Monaspace Neon Regular"
+font-size = 11
+cursor-color = #FFA500
+font-feature = +liga
+cursor-style = block
+
+# the clipboard
+clipboard-read = allow
+clipboard-write = allow
+clipboard-trim-trailing-spaces = true
+

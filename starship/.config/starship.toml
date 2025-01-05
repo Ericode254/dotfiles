@@ -1,0 +1,136 @@
+# Customize the prompt symbol
+[character]
+symbol = "➜"
+success_symbol = "[✔](bold green)"
+error_symbol = "[✗](bold red)"
+
+# Show the current directory
+[directory]
+truncation_length = 3
+
+[bun]
+format = 'via [🍔 $version](bold green) '
+
+# Change Node.js version display
+[nodejs]
+detect_files = ['package.json', '.node-version', '!bunfig.toml', '!bun.lockb']
+format = "via [ $version](bold green) "
+
+# Display Python virtual environment
+[python]
+symbol = "🐍 "
+
+[[battery.display]] # 'bold red' style and discharging_symbol when capacity is between 0% and 10%
+threshold = 20
+style = 'bold red'
+
+[[battery.display]] # 'bold yellow' style and 💦 symbol when capacity is between 10% and 30%
+threshold = 40
+style = 'bold yellow'
+discharging_symbol = '💦 '
+
+[conda]
+format = '[$symbol$environment](dimmed green) '
+
+[container]
+format = '[$symbol \[$name\]]($style) '
+
+[dart]
+format = 'via [🔰 $version](bold red) '
+
+[deno]
+format = 'via [🦕 $version](green bold) '
+
+[golang]
+format = 'via [🏎💨 $version](bold cyan) '
+
+[lua]
+format = 'via [🌕 $version](bold blue) '
+
+[rust]
+format = 'via [⚙️ $version](red bold)'
+
+[git_branch]
+symbol = '🌱 '
+truncation_length = 4
+truncation_symbol = ''
+
+[git_commit]
+commit_hash_length = 4
+tag_symbol = '🔖 '
+
+[git_metrics]
+added_style = 'bold blue'
+format = '[+$added]($added_style)/[-$deleted]($deleted_style) '
+
+[git_status]
+conflicted = '🏳'
+ahead = '🏎💨'
+behind = '😰'
+diverged = '😵'
+up_to_date = '✓'
+untracked = '🤷'
+stashed = '📦'
+modified = '📝'
+staged = '[++\($count\)](green)'
+renamed = '👅'
+deleted = '🗑'
+
+[hg_branch]
+format = 'on [🌱 $branch](bold purple)'
+truncation_length = 4
+truncation_symbol = ''
+
+[os.symbols]
+AIX = "➿ "
+Alpaquita = "🔔 "
+AlmaLinux = "💠 "
+Alpine = "🏔️ "
+Amazon = "🙂 "
+Android = "🤖 "
+Arch = "🎗️ "
+Artix = "🎗️ "
+CentOS = "💠 "
+Debian = "🌀 "
+DragonFly = "🐉 "
+Emscripten = "🔗 "
+EndeavourOS = "🚀 "
+Fedora = "🎩 "
+FreeBSD = "😈 "
+Garuda = "🦅 "
+Gentoo = "🗜️ "
+HardenedBSD = "🛡️ "
+Illumos = "🐦 "
+Kali = "🐉 "
+Linux = "🐧 "
+Mabox = "📦 "
+Macos = "🍎 "
+Manjaro = "🥭 "
+Mariner = "🌊 "
+MidnightBSD = "🌘 "
+Mint = "🌿 "
+NetBSD = "🚩 "
+NixOS = "❄️ "
+OpenBSD = "🐡 "
+OpenCloudOS = "☁️ "
+openEuler = "🦉 "
+openSUSE = "🦎 "
+OracleLinux = "🦴 "
+Pop = "🍭 "
+Raspbian = "🍓 "
+Redhat = "🎩 "
+RedHatEnterprise = "🎩 "
+RockyLinux = "💠 "
+Redox = "🧪 "
+Solus = "⛵ "
+SUSE = "🦎 "
+Ubuntu = "🎯 "
+Ultramarine = "🔷 "
+Unknown = "❓ "
+Void = "  "
+
+[package]
+format = 'via [🎁 $version](208 bold) '
+
+# Wait 10 milliseconds for starship to check files under the current directory.
+scan_timeout = 10

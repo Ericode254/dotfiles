@@ -1,6 +1,8 @@
+# Wait 10 milliseconds for starship to check files under the current directory.
+scan_timeout = 1000
+
 # Customize the prompt symbol
 [character]
-symbol = "➜"
 success_symbol = "[✔](bold green)"
 error_symbol = "[✗](bold red)"
 
@@ -81,6 +83,9 @@ format = 'on [🌱 $branch](bold purple)'
 truncation_length = 4
 truncation_symbol = ''
 
+[package]
+format = 'via [🎁 $version](208 bold) '
+
 [os.symbols]
 AIX = "➿ "
 Alpaquita = "🔔 "
@@ -129,8 +134,4 @@ Ultramarine = "🔷 "
 Unknown = "❓ "
 Void = "  "
 
-[package]
-format = 'via [🎁 $version](208 bold) '
 
-# Wait 10 milliseconds for starship to check files under the current directory.
-scan_timeout = 1000

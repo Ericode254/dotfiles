@@ -29,11 +29,19 @@ lspconfig.eslint.setup {}
 lspconfig.clangd.setup {
   cmd = { "clangd", "--background-index" },
   filetypes = { "c", "cpp" },
-  root_dir = require("lspconfig/util").root_pattern("compile_commands.json", "compile_flags.txt", ".git", "CMAKELists.txt"),
+  root_dir = require("lspconfig/util").root_pattern(
+    "compile_commands.json",
+    "compile_flags.txt",
+    ".git",
+    "CMAKELists.txt"
+  ),
 }
 
 -- setup bash language server
 lspconfig.bashls.setup {}
+
+-- setup go language server
+lspconfig.gopls.setup {}
 
 -- configuring single server, example: typescript
 lspconfig.ts_ls.setup {

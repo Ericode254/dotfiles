@@ -25,7 +25,7 @@ save_to_clipboard = true
 [window]
 decorations = "none"
 dynamic_title = true
-opacity = 1.0
+opacity = 0.67
 dynamic_padding = true
 
 [window.padding]
@@ -36,7 +36,7 @@ y = 15
 history = 10000
 multiplier = 3
 
-[bell]
-animation = "Linear"
-duration = 0
-command = { program = "paplay", args = ["/usr/share/sounds/freedesktop/stereo/dialog-error.oga"] }
+# [bell]
+# animation = "Linear"
+# duration = 0
+# command = { program = "paplay", args = ["/usr/share/sounds/freedesktop/stereo/dialog-error.oga"] }

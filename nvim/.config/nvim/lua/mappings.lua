@@ -49,9 +49,15 @@ map("x", "<A-k>", ":m '<-2<CR>gv=gv", opts)
 map("n", "<leader>dl", '"_d<cr>', opts)
 map("v", "<leader>dl", '"_d<cr>', opts)
 
+-- delete everything in file.
+map("n", "<leader>de", ":%d<cr>", opts)
+
 -- move to the end and beginning of the line
-map("n", "sh", "^", { desc = "go to the begining of the line" })
-map("n", "sl", "$", { desc = "go to the end of the line" })
+map({ "n", "v" }, "sh", "^", { desc = "go to the begining of the line" })
+map({ "n", "v" }, "sl", "$", { desc = "go to the end of the line" })
+
+-- exit terminal mode
+map("t", "<esc>", "<c-\\><c-n>", { desc = "exit terminal mode" })
 
 -- search through todos
 map("n", "<leader>td", ":TodoTelescope<cr>", { desc = "search todos" })

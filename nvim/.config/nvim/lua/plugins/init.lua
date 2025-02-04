@@ -4,6 +4,45 @@ return {
     event = "BufWritePre", -- uncomment for format on save
     opts = require "configs.conform",
   },
+
+  {
+    "smjonas/inc-rename.nvim",
+    enabled = true,
+    event = "LspAttach",
+    lazy = false,
+    config = function()
+      require("inc_rename").setup()
+      vim.keymap.set("n", "<leader>rn", function()
+        return ":IncRename " .. vim.fn.expand "<cword>"
+      end, { expr = true, desc = "Incremental Rename" })
+    end,
+  },
+  {
+    "jiaoshijie/undotree",
+    dependencies = "nvim-lua/plenary.nvim",
+    config = true,
+    keys = { -- load the plugin only when using it's keybinding:
+      { "<leader>un", "<cmd>lua require('undotree').toggle()<cr>", desc = "Undotree" },
+    },
+  },
+  {
+    "stevearc/oil.nvim",
+    ---@module 'oil'
+    ---@type oil.SetupOpts
+    opts = {},
+    -- Optional dependencies
+    dependencies = { { "echasnovski/mini.icons", opts = {} } },
+    -- dependencies = { "nvim-tree/nvim-web-devicons" }, -- use if you prefer nvim-web-devicons
+    -- Lazy loading is not recommended because it is very tricky to make it work correctly in all situations.
+    lazy = false,
+  },
+  {
+    "rachartier/tiny-glimmer.nvim",
+    event = "TextYankPost",
+    config = function()
+      require "configs.yank"
+    end,
+  },
   {
     "jay-babu/mason-nvim-dap.nvim",
     enabled = true,
@@ -112,7 +151,7 @@ return {
           {
             pane = 2,
             section = "terminal",
-            cmd = "colorscript -e zwaves",
+            cmd = "~/.local/bin/colorscript -e zwaves",
             height = 5,
             padding = 1,
           },

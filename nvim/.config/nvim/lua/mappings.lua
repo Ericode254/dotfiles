@@ -52,6 +52,10 @@ map("v", "<leader>dl", '"_d<cr>', opts)
 -- delete everything in file.
 map("n", "<leader>de", ":%d<cr>", opts)
 
+-- handle wrapping in neovim
+map("n", "k", "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
+map("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
+
 -- move to the end and beginning of the line
 map({ "n", "v" }, "sh", "^", { desc = "go to the begining of the line" })
 map({ "n", "v" }, "sl", "$", { desc = "go to the end of the line" })
@@ -61,5 +65,8 @@ map("t", "<esc>", "<c-\\><c-n>", { desc = "exit terminal mode" })
 
 -- search through todos
 map("n", "<leader>td", ":TodoTelescope<cr>", { desc = "search todos" })
+
+-- open oil file explorer
+map("n", "<leader><leader>", ":Oil<cr>", { desc = "open oil" })
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")

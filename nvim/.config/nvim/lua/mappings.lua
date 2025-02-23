@@ -57,14 +57,18 @@ map("n", "k", "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 map("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 
 -- move to the end and beginning of the line
-map({ "n", "v" }, "sh", "^", { desc = "go to the begining of the line" })
-map({ "n", "v" }, "sl", "$", { desc = "go to the end of the line" })
+map({ "n", "v" }, "sh", "g^", { desc = "go to the begining of the line" })
+map({ "n", "v" }, "sl", "g$", { desc = "go to the end of the line" })
 
 -- exit terminal mode
 map("t", "<esc>", "<c-\\><c-n>", { desc = "exit terminal mode" })
 
 -- search through todos
 map("n", "<leader>td", ":TodoTelescope<cr>", { desc = "search todos" })
+
+map("v", "<leader>lf", function()
+  require("conform").format { async = true, lsp_fallback = true }
+end)
 
 -- open oil file explorer
 map("n", "<leader><leader>", ":Oil<cr>", { desc = "open oil" })

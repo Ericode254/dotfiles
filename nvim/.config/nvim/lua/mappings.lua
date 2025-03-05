@@ -66,11 +66,10 @@ map("t", "<esc>", "<c-\\><c-n>", { desc = "exit terminal mode" })
 -- search through todos
 map("n", "<leader>td", ":TodoTelescope<cr>", { desc = "search todos" })
 
-map("v", "<leader>lf", function()
-  require("conform").format { async = true, lsp_fallback = true }
-end)
-
 -- open oil file explorer
 map("n", "<leader><leader>", ":Oil<cr>", { desc = "open oil" })
+
+-- highlight a single line
+map("n", "vv", "vg$", { desc = "visualize the whole line" })
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
